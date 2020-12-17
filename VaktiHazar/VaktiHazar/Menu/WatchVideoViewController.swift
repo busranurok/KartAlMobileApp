@@ -7,8 +7,12 @@
 //
 
 import UIKit
+
+
 class WatchVideoViewController: UIViewController {
-    @IBOutlet var tableView: UITableView!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,3 +25,31 @@ class WatchVideoViewController: UIViewController {
     }
     
 }
+
+
+extension WatchVideoViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 5
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "WatchVideoTableViewCell", for: indexPath) as? WatchVideoTableViewCell else {
+            fatalError("Unable to create explore table view cell")
+        }
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 170
+    }
+    
+    
+}
+

@@ -47,6 +47,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     @IBAction func btnBackPressed(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        
+        performSegue(withIdentifier: "toMyAccoountVC", sender: nil)
+        
     }
 }

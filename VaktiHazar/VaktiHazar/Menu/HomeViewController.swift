@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     let aData : NSArray = ["Hesabım","Video İzle", "Kampanyalar", "Kupon Satın Al", "İletişim Bilgileri", "SSS", "Ayarlar", "Çıkış"]
+    let imageData : NSArray = ["userIcon", "watchVideo", "campaingIcon", "couponIcon", "phoneIcon", "fagIcon", "settingIcon", "exitIcon"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,8 +29,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let aCell = tableView.dequeueReusableCell(
             withIdentifier: "kCell", for: indexPath)
-        let aLabel : UILabel = aCell.viewWithTag(10) as! UILabel
+        let aLabel : UILabel = aCell.viewWithTag(1) as! UILabel
         aLabel.text = aData[indexPath.row] as? String
+        let aImage : UIImageView = aCell.viewWithTag(2) as! UIImageView
+        aImage.image = UIImage(named: imageData[indexPath.row] as! String)
         return aCell
     }
     

@@ -17,7 +17,13 @@
 		BA261F9E2583A0CF00933149 /* WatchVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA261F9D2583A0CF00933149 /* WatchVideoViewController.swift */; };
 		BA4E180025756A2800289996 /* login.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BA1E91C12574E616004C1A4A /* login.mp4 */; };
 		BA4E1805257573EB00289996 /* CreatedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4E1804257573EB00289996 /* CreatedUser.swift */; };
+		BA505C1125867DAA00FB1A07 /* PersonelInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA505C1025867DAA00FB1A07 /* PersonelInformationViewController.swift */; };
 		BA5DC6EE257D2532009120AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5DC6ED257D2532009120AB /* Main.storyboard */; };
+		BA75A928258B6FB0008A5614 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75A927258B6FB0008A5614 /* ChangeEmailViewController.swift */; };
+		BA75A92A258B7C1E008A5614 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75A929258B7C1E008A5614 /* ChangePasswordViewController.swift */; };
+		BA75A92D258B8A5F008A5614 /* ChangeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75A92C258B8A5F008A5614 /* ChangeAddressViewController.swift */; };
+		BA75A92F258BC111008A5614 /* WatchVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75A92E258BC111008A5614 /* WatchVideoTableViewCell.swift */; };
+		BA75A931258BCB99008A5614 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75A930258BCB99008A5614 /* VideoDetailViewController.swift */; };
 		BACD111725767D42004ADCE8 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD10FC25767D42004ADCE8 /* IQTextView.swift */; };
 		BACD111825767D42004ADCE8 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD10FD25767D42004ADCE8 /* IQKeyboardManager+Internal.swift */; };
 		BACD111925767D42004ADCE8 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD10FF25767D42004ADCE8 /* IQPreviousNextView.swift */; };
@@ -62,7 +68,13 @@
 		BA261F9B25839F5200933149 /* KHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHomeViewController.swift; sourceTree = "<group>"; };
 		BA261F9D2583A0CF00933149 /* WatchVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVideoViewController.swift; sourceTree = "<group>"; };
 		BA4E1804257573EB00289996 /* CreatedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedUser.swift; sourceTree = "<group>"; };
+		BA505C1025867DAA00FB1A07 /* PersonelInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonelInformationViewController.swift; sourceTree = "<group>"; };
 		BA5DC6ED257D2532009120AB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BA75A927258B6FB0008A5614 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
+		BA75A929258B7C1E008A5614 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		BA75A92C258B8A5F008A5614 /* ChangeAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAddressViewController.swift; sourceTree = "<group>"; };
+		BA75A92E258BC111008A5614 /* WatchVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVideoTableViewCell.swift; sourceTree = "<group>"; };
+		BA75A930258BCB99008A5614 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		BACD10FC25767D42004ADCE8 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
 		BACD10FD25767D42004ADCE8 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
 		BACD10FF25767D42004ADCE8 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
@@ -137,6 +149,12 @@
 				BA261F9B25839F5200933149 /* KHomeViewController.swift */,
 				BA261F9D2583A0CF00933149 /* WatchVideoViewController.swift */,
 				BAE343D925858EFB00EA969D /* DetailsViewController.swift */,
+				BA505C1025867DAA00FB1A07 /* PersonelInformationViewController.swift */,
+				BA75A927258B6FB0008A5614 /* ChangeEmailViewController.swift */,
+				BA75A929258B7C1E008A5614 /* ChangePasswordViewController.swift */,
+				BA75A92C258B8A5F008A5614 /* ChangeAddressViewController.swift */,
+				BA75A92E258BC111008A5614 /* WatchVideoTableViewCell.swift */,
+				BA75A930258BCB99008A5614 /* VideoDetailViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -347,7 +365,9 @@
 				BA21B44F257636520011950F /* ApprovalKVKKViewController.swift in Sources */,
 				BAE343DA25858EFB00EA969D /* DetailsViewController.swift in Sources */,
 				BACD111E25767D42004ADCE8 /* IQInvocation.swift in Sources */,
+				BA75A928258B6FB0008A5614 /* ChangeEmailViewController.swift in Sources */,
 				BACD112925767D42004ADCE8 /* IQUIViewController+Additions.swift in Sources */,
+				BA75A92D258B8A5F008A5614 /* ChangeAddressViewController.swift in Sources */,
 				BA4E1805257573EB00289996 /* CreatedUser.swift in Sources */,
 				BACD112125767D42004ADCE8 /* IQKeyboardManagerConstants.swift in Sources */,
 				BACD111725767D42004ADCE8 /* IQTextView.swift in Sources */,
@@ -357,11 +377,14 @@
 				BACD111925767D42004ADCE8 /* IQPreviousNextView.swift in Sources */,
 				BACD112825767D42004ADCE8 /* IQUIScrollView+Additions.swift in Sources */,
 				BACD112025767D42004ADCE8 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				BA75A92A258B7C1E008A5614 /* ChangePasswordViewController.swift in Sources */,
 				BA1E91BF2574DDB4004C1A4A /* Constants.swift in Sources */,
 				BACD112425767D42004ADCE8 /* IQKeyboardManager.swift in Sources */,
 				BACD111F25767D42004ADCE8 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
 				BACD113125769A36004ADCE8 /* ForgetPasswordViewController.swift in Sources */,
 				BACD112625767D42004ADCE8 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
+				BA75A92F258BC111008A5614 /* WatchVideoTableViewCell.swift in Sources */,
+				BA505C1125867DAA00FB1A07 /* PersonelInformationViewController.swift in Sources */,
 				BACD112225767D42004ADCE8 /* IQKeyboardManager+Position.swift in Sources */,
 				BACD112A25767D42004ADCE8 /* IQUITextFieldView+Additions.swift in Sources */,
 				BAD1272F256FDDFD006DAF5B /* ViewController.swift in Sources */,
@@ -370,6 +393,7 @@
 				BA261F9825839D8600933149 /* MyAccountViewController.swift in Sources */,
 				BAD1272D256FDDFD006DAF5B /* AppDelegate.swift in Sources */,
 				BA261F9C25839F5200933149 /* KHomeViewController.swift in Sources */,
+				BA75A931258BCB99008A5614 /* VideoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
