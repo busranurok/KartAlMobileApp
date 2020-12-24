@@ -24,6 +24,9 @@
 		BA75A92D258B8A5F008A5614 /* ChangeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75A92C258B8A5F008A5614 /* ChangeAddressViewController.swift */; };
 		BA75A92F258BC111008A5614 /* WatchVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75A92E258BC111008A5614 /* WatchVideoTableViewCell.swift */; };
 		BA75A931258BCB99008A5614 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75A930258BCB99008A5614 /* VideoDetailViewController.swift */; };
+		BABA1087259364BE000EF076 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA1086259364BE000EF076 /* ProductsViewController.swift */; };
+		BABA1089259368D2000EF076 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA1088259368D2000EF076 /* ProductsCollectionViewCell.swift */; };
+		BABA108D2593B0F9000EF076 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA108C2593B0F9000EF076 /* BuyViewController.swift */; };
 		BACD111725767D42004ADCE8 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD10FC25767D42004ADCE8 /* IQTextView.swift */; };
 		BACD111825767D42004ADCE8 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD10FD25767D42004ADCE8 /* IQKeyboardManager+Internal.swift */; };
 		BACD111925767D42004ADCE8 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD10FF25767D42004ADCE8 /* IQPreviousNextView.swift */; };
@@ -75,6 +78,9 @@
 		BA75A92C258B8A5F008A5614 /* ChangeAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAddressViewController.swift; sourceTree = "<group>"; };
 		BA75A92E258BC111008A5614 /* WatchVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVideoTableViewCell.swift; sourceTree = "<group>"; };
 		BA75A930258BCB99008A5614 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
+		BABA1086259364BE000EF076 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		BABA1088259368D2000EF076 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		BABA108C2593B0F9000EF076 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		BACD10FC25767D42004ADCE8 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
 		BACD10FD25767D42004ADCE8 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
 		BACD10FF25767D42004ADCE8 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				BA75A92C258B8A5F008A5614 /* ChangeAddressViewController.swift */,
 				BA75A92E258BC111008A5614 /* WatchVideoTableViewCell.swift */,
 				BA75A930258BCB99008A5614 /* VideoDetailViewController.swift */,
+				BABA1086259364BE000EF076 /* ProductsViewController.swift */,
+				BABA1088259368D2000EF076 /* ProductsCollectionViewCell.swift */,
+				BABA108C2593B0F9000EF076 /* BuyViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -352,6 +361,7 @@
 			files = (
 				BA261F9A25839EE100933149 /* kConstant.swift in Sources */,
 				BACD112C25767D42004ADCE8 /* IQNSArray+Sort.swift in Sources */,
+				BABA1089259368D2000EF076 /* ProductsCollectionViewCell.swift in Sources */,
 				BACD112725767D42004ADCE8 /* IQKeyboardManager+Toolbar.swift in Sources */,
 				BACD112525767D42004ADCE8 /* IQKeyboardManager+Debug.swift in Sources */,
 				BA261F9625839AA200933149 /* HomeViewController.swift in Sources */,
@@ -374,10 +384,12 @@
 				BACD111C25767D42004ADCE8 /* IQToolbar.swift in Sources */,
 				BACD111825767D42004ADCE8 /* IQKeyboardManager+Internal.swift in Sources */,
 				BAD1273F256FE7BD006DAF5B /* SignUpViewController.swift in Sources */,
+				BABA1087259364BE000EF076 /* ProductsViewController.swift in Sources */,
 				BACD111925767D42004ADCE8 /* IQPreviousNextView.swift in Sources */,
 				BACD112825767D42004ADCE8 /* IQUIScrollView+Additions.swift in Sources */,
 				BACD112025767D42004ADCE8 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				BA75A92A258B7C1E008A5614 /* ChangePasswordViewController.swift in Sources */,
+				BABA108D2593B0F9000EF076 /* BuyViewController.swift in Sources */,
 				BA1E91BF2574DDB4004C1A4A /* Constants.swift in Sources */,
 				BACD112425767D42004ADCE8 /* IQKeyboardManager.swift in Sources */,
 				BACD111F25767D42004ADCE8 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,

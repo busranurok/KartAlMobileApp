@@ -916,7 +916,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaI-Lj-KfL" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2096.8000000000002" y="-1582.7586206896553"/>
+            <point key="canvasLocation" x="2097" y="-1583"/>
         </scene>
         <!--Watch Video View Controller-->
         <scene sceneID="4tX-QP-IKo">
@@ -1320,6 +1320,9 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <constraint firstAttribute="height" constant="48" id="fmH-P7-tM7"/>
                                 </constraints>
                                 <state key="normal" image="Back"/>
+                                <connections>
+                                    <segue destination="jRO-Lv-Cb3" kind="show" id="7yg-BN-vDc"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4u7-Vf-bmd">
                                 <rect key="frame" x="0.0" y="63" width="375" height="618"/>
@@ -1421,7 +1424,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                 </constraints>
                                 <state key="normal" image="Back"/>
                                 <connections>
-                                    <action selector="backButtonTapped:" destination="FxQ-fG-wGf" eventType="touchUpInside" id="QRU-pX-90f"/>
+                                    <segue destination="jRO-Lv-Cb3" kind="show" id="MUd-bf-sII"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1k7-VM-wwp">
@@ -1546,7 +1549,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                 </constraints>
                                 <state key="normal" image="Back"/>
                                 <connections>
-                                    <action selector="backButtonTapped:" destination="7NF-97-Db6" eventType="touchUpInside" id="zOE-Ks-G77"/>
+                                    <segue destination="f6i-u3-oLC" kind="show" id="bBT-rQ-HTg"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSX-5z-9In">
@@ -1575,6 +1578,168 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
             </objects>
             <point key="canvasLocation" x="5279" y="-1583"/>
         </scene>
+        <!--Products View Controller-->
+        <scene sceneID="6I2-w9-kK8">
+            <objects>
+                <viewController storyboardIdentifier="ProductsVC" id="oLP-Lr-hQU" customClass="ProductsViewController" customModule="VaktiHazar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8nQ-IS-gdr"/>
+                        <viewControllerLayoutGuide type="bottom" id="GFk-BR-EjX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mg1-hf-vyK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ÜRÜNLER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbk-5F-E3Z">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="Soe-pg-AGJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="T9G-cy-QxV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX7-2Y-XsD">
+                                <rect key="frame" x="0.0" y="7" width="55" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="L7C-qj-fB5"/>
+                                    <constraint firstAttribute="width" constant="55" id="xVK-G1-OH0"/>
+                                </constraints>
+                                <state key="normal" image="SideMenu"/>
+                                <connections>
+                                    <action selector="sideMenuTapped:" destination="oLP-Lr-hQU" eventType="touchUpInside" id="WHu-oL-Q3c"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P6R-OU-acA">
+                                <rect key="frame" x="0.0" y="49" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KRz-S2-S2E">
+                                    <size key="itemSize" width="373" height="280"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productsCell" id="HSz-Ls-T8w" customClass="ProductsCollectionViewCell" customModule="VaktiHazar" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="373" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="280"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQi-kd-W7D">
+                                                    <rect key="frame" x="8" y="44" width="357" height="145"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kupon Miktarı: 120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-W7-ShJ">
+                                                    <rect key="frame" x="16" y="209" width="341" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-AE-cq8">
+                                                    <rect key="frame" x="16" y="240" width="341" height="30"/>
+                                                    <state key="normal" title="Satın Al"/>
+                                                    <connections>
+                                                        <segue destination="BXu-ts-1OZ" kind="show" id="tyh-jD-Iuk"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="sdn-AE-cq8" secondAttribute="trailing" constant="16" id="0mm-OW-5En"/>
+                                            <constraint firstAttribute="trailing" secondItem="L3v-W7-ShJ" secondAttribute="trailing" constant="16" id="Cnb-19-hn7"/>
+                                            <constraint firstItem="sdn-AE-cq8" firstAttribute="leading" secondItem="HSz-Ls-T8w" secondAttribute="leading" constant="16" id="KNp-pk-Z3P"/>
+                                            <constraint firstItem="L3v-W7-ShJ" firstAttribute="top" secondItem="qQi-kd-W7D" secondAttribute="bottom" constant="20" id="NjA-rH-sLx"/>
+                                            <constraint firstItem="sdn-AE-cq8" firstAttribute="top" secondItem="L3v-W7-ShJ" secondAttribute="bottom" constant="10" id="Rhv-gq-ID6"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="qQi-kd-W7D" secondAttribute="trailing" id="XYi-Fa-4uw"/>
+                                            <constraint firstItem="qQi-kd-W7D" firstAttribute="leading" secondItem="HSz-Ls-T8w" secondAttribute="leadingMargin" id="Zse-p5-MO2"/>
+                                            <constraint firstAttribute="bottom" secondItem="sdn-AE-cq8" secondAttribute="bottom" constant="10" id="ghJ-yh-M1r"/>
+                                            <constraint firstItem="L3v-W7-ShJ" firstAttribute="leading" secondItem="HSz-Ls-T8w" secondAttribute="leading" constant="16" id="kje-l9-LM5"/>
+                                            <constraint firstItem="qQi-kd-W7D" firstAttribute="top" secondItem="HSz-Ls-T8w" secondAttribute="topMargin" constant="16" id="vmO-BU-iXb"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="buyButton" destination="sdn-AE-cq8" id="1gr-Gi-JEE"/>
+                                            <outlet property="couponLabel" destination="L3v-W7-ShJ" id="sYG-21-elX"/>
+                                            <outlet property="productImage" destination="qQi-kd-W7D" id="6Yy-dr-qTA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="oLP-Lr-hQU" id="yIC-yz-WjI"/>
+                                    <outlet property="delegate" destination="oLP-Lr-hQU" id="L3v-nJ-Pnl"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GFk-BR-EjX" firstAttribute="top" secondItem="P6R-OU-acA" secondAttribute="bottom" id="1BO-QP-jRN"/>
+                            <constraint firstItem="P6R-OU-acA" firstAttribute="leading" secondItem="hxf-aN-pfb" secondAttribute="leading" id="IcJ-W2-BHv"/>
+                            <constraint firstItem="yX7-2Y-XsD" firstAttribute="top" secondItem="mg1-hf-vyK" secondAttribute="top" constant="7" id="M5a-ci-G6l"/>
+                            <constraint firstItem="yX7-2Y-XsD" firstAttribute="leading" secondItem="mg1-hf-vyK" secondAttribute="leading" id="e0X-XB-4gi"/>
+                            <constraint firstItem="Zbk-5F-E3Z" firstAttribute="top" secondItem="8nQ-IS-gdr" secondAttribute="bottom" id="njS-q0-UqW"/>
+                            <constraint firstItem="Zbk-5F-E3Z" firstAttribute="centerX" secondItem="mg1-hf-vyK" secondAttribute="centerX" id="p0N-oq-pUc"/>
+                            <constraint firstItem="P6R-OU-acA" firstAttribute="top" secondItem="Zbk-5F-E3Z" secondAttribute="bottom" constant="8" id="p2A-fU-Xo9"/>
+                            <constraint firstItem="P6R-OU-acA" firstAttribute="trailing" secondItem="hxf-aN-pfb" secondAttribute="trailing" id="tWI-in-1FE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hxf-aN-pfb"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="P6R-OU-acA" id="NSG-Hz-Kxr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAG-Zw-gf5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096.8000000000002" y="-253.2233883058471"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="P0g-5y-UgO">
+            <objects>
+                <viewController storyboardIdentifier="BuyVC" id="BXu-ts-1OZ" customClass="BuyViewController" customModule="VaktiHazar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Z8-nX-8Yo"/>
+                        <viewControllerLayoutGuide type="bottom" id="gpg-i3-Tox"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uun-9Q-URi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SATIN AL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZf-HG-LvP">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Uoj-tk-zxY"/>
+                                    <constraint firstAttribute="width" constant="221" id="miV-5P-X1B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pol-r2-Ejy">
+                                <rect key="frame" x="0.0" y="6.5" width="55" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="H6T-4Z-CHD"/>
+                                    <constraint firstAttribute="height" constant="48" id="bgV-uC-9SG"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <segue destination="oLP-Lr-hQU" kind="show" id="7yX-tl-03g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FZf-HG-LvP" firstAttribute="centerX" secondItem="uun-9Q-URi" secondAttribute="centerX" id="Rl6-4D-jIx"/>
+                            <constraint firstItem="Pol-r2-Ejy" firstAttribute="centerY" secondItem="FZf-HG-LvP" secondAttribute="centerY" id="rPh-JK-trL"/>
+                            <constraint firstItem="FZf-HG-LvP" firstAttribute="top" secondItem="8Z8-nX-8Yo" secondAttribute="bottom" id="x9z-oy-NP3"/>
+                            <constraint firstItem="Pol-r2-Ejy" firstAttribute="leading" secondItem="uun-9Q-URi" secondAttribute="leading" id="zJY-BS-oEe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AV5-8k-6M1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6e-xR-elj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2838" y="-253"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Back" width="20" height="21"/>
@@ -1582,7 +1747,8 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
         <image name="greenPlayIcon" width="312" height="262"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q3E-sN-xQq"/>
+        <segue reference="tyh-jD-Iuk"/>
+        <segue reference="dC1-7e-Kso"/>
         <segue reference="FQW-VJ-iNH"/>
         <segue reference="uaM-yy-oMN"/>
     </inferredMetricsTieBreakers>

@@ -12,8 +12,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
-    let aData : NSArray = ["Hesabım","Video İzle", "Kampanyalar", "Kupon Satın Al", "İletişim Bilgileri", "SSS", "Ayarlar", "Çıkış"]
-    let imageData : NSArray = ["userIcon", "watchVideo", "campaingIcon", "couponIcon", "phoneIcon", "fagIcon", "settingIcon", "exitIcon"]
+    let aData : NSArray = ["Hesabım","Video İzle", "Ürünler", "Kampanyalar","Kupon Satın Al", "İletişim Bilgileri", "SSS", "Ayarlar", "Çıkış"]
+    let imageData : NSArray = ["userIcon", "watchVideo", "campaingIcon", "couponIcon", "phoneIcon", "fagIcon", "settingIcon", "exitIcon", "exitIcon"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +41,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             kConstantObj.SetIntialMainViewController("MyAccountVC") // firstVC is storyboard ID
         }else if indexPath.row == 1 {
             kConstantObj.SetIntialMainViewController("WatchVideoVC")
-        }else if indexPath.row == 7 {
+        }else if indexPath.row == 2 {
+            kConstantObj.SetIntialMainViewController("ProductsVC")
+        }else if indexPath.row == 8 {
             
             let signInController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.signInViewController) as? SignInViewController
             

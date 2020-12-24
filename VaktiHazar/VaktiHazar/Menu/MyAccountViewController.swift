@@ -36,6 +36,7 @@ class MyAccountViewController : UIViewController, UITableViewDataSource, UITable
         let aCell = tableView.dequeueReusableCell(
             withIdentifier: "kCell", for: indexPath)
         let aLabel : UILabel = aCell.viewWithTag(1) as! UILabel
+        let roww=indexPath.row
         aLabel.text = categoryData[indexPath.row] as? String
         return aCell
     }
