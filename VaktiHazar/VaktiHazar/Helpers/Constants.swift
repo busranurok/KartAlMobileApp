@@ -22,4 +22,11 @@ struct Constants {
         
     }
     
+    struct GlobalSettings {
+        
+        static var userId : Int = 0
+        static var email : String = ""
+        
+    }
+    
 }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6737D525DA9FC5009C9FD5 /* MyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6737D425DA9FC5009C9FD5 /* MyOrdersViewController.swift */; };
+		1F6737D825DAFC8D009C9FD5 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6737D725DAFC8D009C9FD5 /* ApiHelper.swift */; };
+		1F6AB14A25DD022800D4CB95 /* LawNo6563ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AB14925DD022800D4CB95 /* LawNo6563ViewController.swift */; };
+		1FF763F425E2D58C003962BC /* UpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF763F325E2D58C003962BC /* UpdateUser.swift */; };
+		1FF763F725E2E051003962BC /* DeActivateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF763F625E2E051003962BC /* DeActivateUser.swift */; };
+		1FF763FA25E2EAAC003962BC /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF763F925E2EAAC003962BC /* ChangeEmail.swift */; };
+		1FF763FD25E2F885003962BC /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF763FC25E2F885003962BC /* ChangePassword.swift */; };
 		BA1E91BF2574DDB4004C1A4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E91BE2574DDB4004C1A4A /* Constants.swift */; };
 		BA21B44F257636520011950F /* ApprovalKVKKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA21B44E257636520011950F /* ApprovalKVKKViewController.swift */; };
 		BA23F9A02571621B00BEC922 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA23F99F2571621B00BEC922 /* Utilities.swift */; };
@@ -61,6 +68,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6737D425DA9FC5009C9FD5 /* MyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersViewController.swift; sourceTree = "<group>"; };
+		1F6737D725DAFC8D009C9FD5 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		1F6AB14925DD022800D4CB95 /* LawNo6563ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawNo6563ViewController.swift; sourceTree = "<group>"; };
+		1FF763F325E2D58C003962BC /* UpdateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUser.swift; sourceTree = "<group>"; };
+		1FF763F625E2E051003962BC /* DeActivateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeActivateUser.swift; sourceTree = "<group>"; };
+		1FF763F925E2EAAC003962BC /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
+		1FF763FC25E2F885003962BC /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		BA1E91BE2574DDB4004C1A4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BA1E91C12574E616004C1A4A /* login.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = login.mp4; sourceTree = "<group>"; };
 		BA21B44E257636520011950F /* ApprovalKVKKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalKVKKViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +156,7 @@
 			children = (
 				BA23F99F2571621B00BEC922 /* Utilities.swift */,
 				BA1E91BE2574DDB4004C1A4A /* Constants.swift */,
+				1F6737D725DAFC8D009C9FD5 /* ApiHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -149,21 +164,22 @@
 		BA261F942583981800933149 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				BA261F9525839AA200933149 /* HomeViewController.swift */,
-				BA261F9725839D8600933149 /* MyAccountViewController.swift */,
-				BA261F9925839EE100933149 /* kConstant.swift */,
 				BA261F9B25839F5200933149 /* KHomeViewController.swift */,
+				BA261F9925839EE100933149 /* kConstant.swift */,
+				BA261F9525839AA200933149 /* HomeViewController.swift */,
 				BA261F9D2583A0CF00933149 /* WatchVideoViewController.swift */,
-				BAE343D925858EFB00EA969D /* DetailsViewController.swift */,
+				BA261F9725839D8600933149 /* MyAccountViewController.swift */,
 				BA505C1025867DAA00FB1A07 /* PersonelInformationViewController.swift */,
-				BA75A927258B6FB0008A5614 /* ChangeEmailViewController.swift */,
-				BA75A929258B7C1E008A5614 /* ChangePasswordViewController.swift */,
 				BA75A92C258B8A5F008A5614 /* ChangeAddressViewController.swift */,
-				BA75A92E258BC111008A5614 /* WatchVideoTableViewCell.swift */,
+				BA75A929258B7C1E008A5614 /* ChangePasswordViewController.swift */,
+				BA75A927258B6FB0008A5614 /* ChangeEmailViewController.swift */,
 				BA75A930258BCB99008A5614 /* VideoDetailViewController.swift */,
+				BAE343D925858EFB00EA969D /* DetailsViewController.swift */,
+				BA75A92E258BC111008A5614 /* WatchVideoTableViewCell.swift */,
 				BABA1086259364BE000EF076 /* ProductsViewController.swift */,
 				BABA1088259368D2000EF076 /* ProductsCollectionViewCell.swift */,
 				BABA108C2593B0F9000EF076 /* BuyViewController.swift */,
+				1F6737D425DA9FC5009C9FD5 /* MyOrdersViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -172,6 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				BA4E1804257573EB00289996 /* CreatedUser.swift */,
+				1FF763F325E2D58C003962BC /* UpdateUser.swift */,
+				1FF763F625E2E051003962BC /* DeActivateUser.swift */,
+				1FF763F925E2EAAC003962BC /* ChangeEmail.swift */,
+				1FF763FC25E2F885003962BC /* ChangePassword.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +302,7 @@
 				BA21B44E257636520011950F /* ApprovalKVKKViewController.swift */,
 				BACD113025769A36004ADCE8 /* ForgetPasswordViewController.swift */,
 				BAD87634257E89F1002758FF /* VaktiHazar-Bridging-Header.h */,
+				1F6AB14925DD022800D4CB95 /* LawNo6563ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -359,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF763F725E2E051003962BC /* DeActivateUser.swift in Sources */,
 				BA261F9A25839EE100933149 /* kConstant.swift in Sources */,
 				BACD112C25767D42004ADCE8 /* IQNSArray+Sort.swift in Sources */,
 				BABA1089259368D2000EF076 /* ProductsCollectionViewCell.swift in Sources */,
@@ -375,7 +397,9 @@
 				BA21B44F257636520011950F /* ApprovalKVKKViewController.swift in Sources */,
 				BAE343DA25858EFB00EA969D /* DetailsViewController.swift in Sources */,
 				BACD111E25767D42004ADCE8 /* IQInvocation.swift in Sources */,
+				1FF763F425E2D58C003962BC /* UpdateUser.swift in Sources */,
 				BA75A928258B6FB0008A5614 /* ChangeEmailViewController.swift in Sources */,
+				1FF763FA25E2EAAC003962BC /* ChangeEmail.swift in Sources */,
 				BACD112925767D42004ADCE8 /* IQUIViewController+Additions.swift in Sources */,
 				BA75A92D258B8A5F008A5614 /* ChangeAddressViewController.swift in Sources */,
 				BA4E1805257573EB00289996 /* CreatedUser.swift in Sources */,
@@ -400,11 +424,15 @@
 				BACD112225767D42004ADCE8 /* IQKeyboardManager+Position.swift in Sources */,
 				BACD112A25767D42004ADCE8 /* IQUITextFieldView+Additions.swift in Sources */,
 				BAD1272F256FDDFD006DAF5B /* ViewController.swift in Sources */,
+				1F6737D825DAFC8D009C9FD5 /* ApiHelper.swift in Sources */,
 				BACD111D25767D42004ADCE8 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				1FF763FD25E2F885003962BC /* ChangePassword.swift in Sources */,
 				BACD112B25767D42004ADCE8 /* IQUIView+Hierarchy.swift in Sources */,
+				1F6737D525DA9FC5009C9FD5 /* MyOrdersViewController.swift in Sources */,
 				BA261F9825839D8600933149 /* MyAccountViewController.swift in Sources */,
 				BAD1272D256FDDFD006DAF5B /* AppDelegate.swift in Sources */,
 				BA261F9C25839F5200933149 /* KHomeViewController.swift in Sources */,
+				1F6AB14A25DD022800D4CB95 /* LawNo6563ViewController.swift in Sources */,
 				BA75A931258BCB99008A5614 /* VideoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,7 +46,7 @@ class SignInViewController: UIViewController {
             passwordTextField.text=rememberPassword!
             //dontForgerMeSwitch.isOn = true
             //activity
-            dontForgerMeSwitch.isEnabled = false
+            //dontForgerMeSwitch.isEnabled = false
             //invisibility
             //dontForgerMeSwitch.isHidden = true
         }
@@ -124,7 +124,7 @@ class SignInViewController: UIViewController {
         if errorMessage != nil {
             
             //There is something wrong with the fields, show error message
-            showError(message: errorMessage!)
+            self.showAlert(message: errorMessage!)
             
         } else {
             
@@ -134,16 +134,50 @@ class SignInViewController: UIViewController {
             
             
             //Send to Api
-            let url = URL(string: "http://biga.vaktihazar.com/User/GetUser?email=" + email!+"&password=" + password!)
+            let url = URL(string: "http://biga.vaktihazar.com/User/Login?email=" + email!+"&password=" + password!)
             guard let downloadURL = url else { return }
             URLSession.shared.dataTask(with: downloadURL) { data, URLResponse, error in
                 guard let data = data, error == nil, URLResponse != nil else {
                     print("something is wrong")
                     return }
+                
+                do {
+                    if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
+                                
+                                // Print out entire dictionary
+                                print(convertedJsonIntoDict)
+                                
+                                // Get value by key
+                        Constants.GlobalSettings.userId = convertedJsonIntoDict["Id"] as! Int
+                       
+                        
+                        if Constants.GlobalSettings.userId > 0 {
+                        
+                            Constants.GlobalSettings.email = convertedJsonIntoDict["Email"] as! String
+                            //api ve menüler farklı threadlerde çalışıyor
+                            //api threadinden menü değiştirme işlemi bu yüzden direkt olarak yapılamıyor
+                            //bu işlemi yapmak için dispatchqueue yapmak gerekiyor
+                            DispatchQueue.main.async {
+                                self.transitionToHome()
+                            }
+                            
+                           
+                            
+                        }else{
+                            
+                            self.showAlert(message : "E-postanız ya da şifreniz doğru değil.")
+                            return
+                            
+                        }
+                            }
+                 } catch let error as NSError {
+                            print(error.localizedDescription)
+                  }
+
                 print("downloaded")
                 
                 }.resume()
-            
+ 
             if dontForgerMeSwitch.isOn == true {
                 
                 let defaults=UserDefaults.standard
@@ -151,9 +185,7 @@ class SignInViewController: UIViewController {
                 defaults.set(password!, forKey: "Password")
                 
             }
-            
-            self.transitionToHome()
-            
+               
         }
         
     }
@@ -173,7 +205,7 @@ class SignInViewController: UIViewController {
     
     
     
-    func showError(message : String){
+    func showAlert(message : String){
         
         let alert = UIAlertController(title: "Dikkat", message: message, preferredStyle: .alert)
         

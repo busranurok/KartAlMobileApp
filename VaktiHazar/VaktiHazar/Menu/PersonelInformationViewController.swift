@@ -22,6 +22,58 @@ class PersonelInformationViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        //apiye userid bilgisi gönderilerek user ın detayları alınacak
+       
+        
+        var name:String = ""
+        var surname:String = ""
+        var phone:String = ""
+        
+        let url = URL(string: "http://biga.vaktihazar.com/User/GetUserById?id=" + String(Constants.GlobalSettings.userId))
+        guard let downloadURL = url else { return }
+        URLSession.shared.dataTask(with: downloadURL) { data, URLResponse, error in
+            guard let data = data, error == nil, URLResponse != nil else {
+                print("something is wrong")
+                return }
+            
+            do {
+                if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
+                            
+                            // Print out entire dictionary
+                            print(convertedJsonIntoDict)
+                            
+                            // Get value by key
+                    name = convertedJsonIntoDict["Name"] as! String
+                    surname = convertedJsonIntoDict["Lastname"] as! String
+                    phone = convertedJsonIntoDict["PhoneNumber"] as! String
+                    
+                   
+                        }
+             } catch let error as NSError {
+                        print(error.localizedDescription)
+              }
+            
+            
+            
+             
+            print("downloaded")
+            
+            DispatchQueue.main.async {
+                //alınan bilgilerle de textboxlar doldurulacak
+                self.firstNameTextField.text = name
+                self.lastNameTextField.text = surname
+                self.phoneTextField.text = phone
+            }
+           
+            
+            }.resume()
+        
+        
+       
+        
+      
+        
          //Making switch button unselected at first
         law6563Switch.isOn = false
         
@@ -111,22 +163,23 @@ class PersonelInformationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func saveChanges(_ sender: Any) {
         
         //Validate the fields
-       /* var errorMessage = validateFields()
+        var errorMessage = validateFields()
         
         if errorMessage != nil {
             
             //There is something wrong with the fields, show error message
-            showError(message: errorMessage!)
+            showAlert(message: errorMessage!)
             
         } else {
             
             //Created cleaned the version of the data
+            let userId = Constants.GlobalSettings.userId
             let name = firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-            let lastName = lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+            let lastname = lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
             let phoneNumber = phoneTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
             
             //Send to Api
-            let url = URL(string: "http://biga.vaktihazar.com/User/CreateUser")
+            let url = URL(string: "http://biga.vaktihazar.com/User/UpdateUser")
             guard let requestUrl = url else { fatalError() }
             var request = URLRequest(url: requestUrl)
             request.httpMethod = "POST"
@@ -139,97 +192,100 @@ class PersonelInformationViewController: UIViewController, UITextFieldDelegate {
             //textlerden bilgiler alınıyor: productNameText.text şeklinde
             //body e yazılacak kısım
             //We get the ones defined with let in the createduser model folder.
-            let requestBody = CreatedUserRequestMessage(name: name, lastName: lastName, phoneNumber: phoneNumber)
+            let requestBody = UpdateUserRequestMessage (userId: userId, name: name, lastName: lastname, phoneNumber: phoneNumber)
             
             var jsonData = try! JSONEncoder().encode(requestBody)
             request.httpBody = jsonData
             
             
-            
-            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 
-                if let error = error {
+               let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                     
-                    let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
-                    
-                    //butona tıklanınca bir şey olmasın istediğimiz için handler a ihtiyacımız yok
-                    let okButton = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
-                    alert.addAction(okButton)
-                    self.present(alert, animated: true, completion: nil)
-                    
-                    return
-                }
-                
-                guard let data = data else {return}
-                
-                do{
-                    
-                    //datayı önce string e çeviriyorum
-                    //bir formata çevirmiş isem o formata encode ettim olur
-                    //orjinal formatına çevirir isem decode ederim
-                    let dataString = String(data: data, encoding: .utf8)
-                    //sonra onu json a çeviriyorum
-                    jsonData = dataString!.data(using: .utf8)!
-                    //json dan nesneye çevirmek decode (bana dönen cevap)
-                    let response = try! JSONDecoder().decode(CreatedUserResponseMesssage.self, from: jsonData)
-                    
-                    
-                    var resultStr : String = ""
-                    resultStr += "Is Success: \(response.isSuccess) ErrorMessage : \(response.errorMessage) \n"
-                    
-                    
-                    if(!response.isSuccess)
-                    {
-                        errorMessage = "Kullanıcı oluşturulurken hata oluştu : \(response.errorMessage)"
+                    if let error = error {
+                        
+                        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                        
+                        //butona tıklanınca bir şey olmasın istediğimiz için handler a ihtiyacımız yok
+                        let okButton = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+                        alert.addAction(okButton)
+                        self.present(alert, animated: true, completion: nil)
+                        
+                        return
                     }
                     
-                    let alert = UIAlertController(title: "Information", message: resultStr, preferredStyle: .alert)
+                    guard let data = data else {return}
                     
-                    let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                    
-                    alert.addAction(ok)
-                    
-                    self.present(alert, animated: true, completion: nil)
-                    
-                } catch let jsonErr{
-                    
-                    print(jsonErr)
+                    do{
+                        
+                        //datayı önce string e çeviriyorum
+                        //bir formata çevirmiş isem o formata encode ettim olur
+                        //orjinal formatına çevirir isem decode ederim
+                        let dataString = String(data: data, encoding: .utf8)
+                        //sonra onu json a çeviriyorum
+                        jsonData = dataString!.data(using: .utf8)!
+                        //json dan nesneye çevirmek decode (bana dönen cevap)
+                        let response = try! JSONDecoder().decode(UpdateUserResponseMesssage.self, from: jsonData)
+                        
+                        if response.IsSuccess == false {
+                            
+                            self.showAlert(message: response.Message)
+                            return
+                        }
+                        
+                        
+                        var resultStr : String = ""
+                        resultStr += "Is Success: \(response.IsSuccess) ErrorMessage : \(response.Message) \n"
+                        
+                        
+                        if(!response.IsSuccess)
+                        {
+                            errorMessage = "Değişiklikleri kaydederken bir hata oluştu : \(response.Message)"
+                        }
+                        else{
+                            DispatchQueue.main.async {
+                                self.transitionToSignIn()
+                            }
+                        }
+                        
+                    } catch let jsonErr{
+                        
+                        print(jsonErr)
+                        
+                    }
                     
                 }
-                
-            }
-            task.resume()
+                task.resume()
             
             
             //Create the user
             if errorMessage != nil{
                 
                 //There was an error creating the user
-                showError(message: errorMessage!)
+                showAlert(message: errorMessage!)
                 
             }
             else{
                 
                 //Transition to the home screen
-                transitionToHome()
+                
                 
             }
-            
+           
             
         }
         
     }
     
-    func transitionToHome(){
+    func transitionToSignIn(){
         
-        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.signInViewController) as? SignInViewController
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
         
     }
     
-    func showError(message : String){
+    func showAlert(message : String){
         
         let alert = UIAlertController(title: "Dikkat", message: message, preferredStyle: .alert)
         
@@ -240,10 +296,45 @@ class PersonelInformationViewController: UIViewController, UITextFieldDelegate {
         self.present(alert, animated: true, completion: nil)
         
     }
-    
-}*/
-
- }
+        
+    @IBAction func passiveMembershipTapped(_ sender: Any) {
+        
+        var isSuccess : Bool = false
+        //controller/action/parametter(s)
+        let url = URL(string: "http://biga.vaktihazar.com/User/DeactivateUser?id=" + String(Constants.GlobalSettings.userId))
+        guard let downloadURL = url else { return }
+        URLSession.shared.dataTask(with: downloadURL) { data, URLResponse, error in
+            guard let data = data, error == nil, URLResponse != nil else {
+                print("something is wrong")
+                return }
+            
+            do {
+                if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
+                            
+                            // Print out entire dictionary
+                            print(convertedJsonIntoDict)
+                            
+                            // Get value by key
+                            isSuccess = convertedJsonIntoDict["IsSuccess"] as! Bool
+                    
+                        }
+             } catch let error as NSError {
+                        print(error.localizedDescription)
+              }
+            
+             
+            print("downloaded")
+            
+            }.resume() //It is an indication that the processes in the api are finished.
+        
+        
+        if isSuccess == false {
+            showAlert(message: "Üyeliğiniz pasif edilmiştir.")
+        } else {
+            showAlert(message: "Üyeliğiniz pasif edilirken bir hata oluştu.")
+        }
+        
+    }
     
 }
 

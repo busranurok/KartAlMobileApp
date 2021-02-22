@@ -61,7 +61,8 @@ class ForgetPasswordViewController: UIViewController {
         if errorMessage != nil {
             
             //There is something wrong with the fields, show error message
-            showError(message: errorMessage!)
+            showAlert(message: errorMessage!, isSuccess: false)
+            
             
         } else {
             
@@ -80,7 +81,7 @@ class ForgetPasswordViewController: UIViewController {
                     
                     }.resume()
             
-                showError(message: "Şifre sıfırlama linki e-postanıza başarılı bir şekilde gönderilmiştir.")
+            showAlert(message: "Şifre sıfırlama linki e-postanıza başarılı bir şekilde gönderilmiştir.",isSuccess: true)
 
         }
         
@@ -96,12 +97,14 @@ class ForgetPasswordViewController: UIViewController {
     }
     
     
-    func showError(message : String){
+    func showAlert(message : String,isSuccess:Bool){
         
         let alert = UIAlertController(title: "Dikkat", message: message, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Tamam", style: .default, handler: { (action: UIAlertAction!) in
-            self.transitionToSignIn()
+           if isSuccess == true {
+                self.transitionToSignIn()
+            }
         }))
         
         self.present(alert, animated: true, completion: nil)

@@ -12,8 +12,6 @@ class ApprovalKVKKViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    
-
+        
+        }
 }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mhu-4x-Okk">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mhu-4x-Okk">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-03-GEf">
                                 <rect key="frame" x="40" y="447" width="295" height="180"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gai-al-5Of">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gai-al-5Of">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="CL8-Aw-YnN"/>
@@ -31,7 +29,7 @@
                                             <segue destination="tPv-jo-E5A" kind="show" identifier="" id="OBi-fj-DV3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsU-K7-6hn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsU-K7-6hn">
                                         <rect key="frame" x="0.0" y="100" width="295" height="80"/>
                                         <state key="normal" title="Giriş Yap"/>
                                         <connections>
@@ -44,13 +42,13 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vhR-03-GEf" secondAttribute="trailing" constant="40" id="IAa-gC-JWn"/>
                             <constraint firstItem="vhR-03-GEf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Jkx-it-mfw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vhR-03-GEf" secondAttribute="bottom" constant="40" id="uVP-t8-XOJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="NnG-Lj-DNu"/>
                     <connections>
@@ -67,7 +65,7 @@
             <objects>
                 <viewController storyboardIdentifier="SignInVC" id="tyc-Hu-b88" customClass="SignInViewController" customModule="VaktiHazar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CUk-jq-hOW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="psV-D6-doe">
@@ -78,13 +76,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="QRH-mM-rKA"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8T-BV-rFM">
                                         <rect key="frame" x="0.0" y="60" width="295" height="40"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -114,14 +110,14 @@
                                             <constraint firstAttribute="trailing" secondItem="yuw-I6-8aQ" secondAttribute="trailing" id="z4X-kt-BRS"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qam-7M-5xW">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qam-7M-5xW">
                                         <rect key="frame" x="0.0" y="171" width="295" height="40"/>
                                         <state key="normal" title="Giriş Yap"/>
                                         <connections>
                                             <action selector="signInTapped:" destination="tyc-Hu-b88" eventType="touchUpInside" id="fBw-Hc-Y9D"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHM-nM-egr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHM-nM-egr">
                                         <rect key="frame" x="0.0" y="231" width="295" height="40"/>
                                         <state key="normal" title="Şifremi Unuttum"/>
                                         <connections>
@@ -141,7 +137,7 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-Dp-7qV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-Dp-7qV">
                                                 <rect key="frame" x="197" y="0.0" width="98" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="Hemen Üye Ol!">
@@ -171,14 +167,15 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ubL-2G-J50"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ubL-2G-J50" firstAttribute="trailing" secondItem="psV-D6-doe" secondAttribute="trailing" constant="40" id="3XA-Wi-UOS"/>
                             <constraint firstItem="psV-D6-doe" firstAttribute="leading" secondItem="ubL-2G-J50" secondAttribute="leading" constant="40" id="jUm-mR-duX"/>
                             <constraint firstItem="psV-D6-doe" firstAttribute="top" secondItem="ubL-2G-J50" secondAttribute="top" constant="40" id="tyb-MS-O51"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ubL-2G-J50"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7M3-Nj-W0Z"/>
                     <connections>
                         <outlet property="dontForgerMeSwitch" destination="1O1-u9-57d" id="shS-2T-MlQ"/>
                         <outlet property="dontForgetMeLabel" destination="yuw-I6-8aQ" id="KBm-Q5-UcI"/>
@@ -197,22 +194,21 @@
             <objects>
                 <viewController storyboardIdentifier="ForgetPasswordVC" id="Vdj-Ac-9KG" customClass="ForgetPasswordViewController" customModule="VaktiHazar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YEZ-3U-iMB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NzQ-D6-Jgy">
-                                <rect key="frame" x="40" y="60" width="295" height="100"/>
+                                <rect key="frame" x="40" y="40" width="295" height="100"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Posta Adresi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTY-XE-dcj">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="UuJ-WB-uMy"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAN-PF-3hs">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAN-PF-3hs">
                                         <rect key="frame" x="0.0" y="60" width="295" height="40"/>
                                         <state key="normal" title="Gönder"/>
                                         <connections>
@@ -226,14 +222,15 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fgp-xG-FIh"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NzQ-D6-Jgy" firstAttribute="leading" secondItem="Fgp-xG-FIh" secondAttribute="leading" constant="40" id="b5R-AA-Nxb"/>
                             <constraint firstItem="Fgp-xG-FIh" firstAttribute="trailing" secondItem="NzQ-D6-Jgy" secondAttribute="trailing" constant="40" id="cxQ-Ku-Ydd"/>
                             <constraint firstItem="NzQ-D6-Jgy" firstAttribute="top" secondItem="Fgp-xG-FIh" secondAttribute="top" constant="40" id="die-aG-0cs"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Fgp-xG-FIh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Dul-SA-CU7"/>
                     <connections>
                         <outlet property="emailTextField" destination="TTY-XE-dcj" id="9WB-pc-6dV"/>
                         <outlet property="sendButton" destination="AAN-PF-3hs" id="WVW-9d-3Ub"/>
@@ -248,63 +245,60 @@
             <objects>
                 <viewController id="tPv-jo-E5A" customClass="SignUpViewController" customModule="VaktiHazar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nf2-0o-1oy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0YG-tx-66B">
-                                <rect key="frame" x="40" y="60" width="295" height="581"/>
+                                <rect key="frame" x="40" y="40" width="295" height="604"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgc-dg-GH3">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YbK-wv-e3I">
-                                        <rect key="frame" x="0.0" y="50" width="295" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="54" width="295" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Posta Adresi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUz-ZC-vW0">
-                                        <rect key="frame" x="0.0" y="100" width="295" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="108" width="295" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Doğum Tarihi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrd-zR-AR4">
-                                        <rect key="frame" x="0.0" y="150" width="295" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="162" width="295" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAM-pH-OSF">
-                                        <rect key="frame" x="0.0" y="200" width="295" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="216" width="295" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre (Tekrar)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSp-Kh-kTY">
-                                        <rect key="frame" x="0.0" y="250" width="295" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="270" width="295" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cep Telefonu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nr1-3f-jhF">
-                                        <rect key="frame" x="0.0" y="300" width="295" height="40"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="324" width="295" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="az4-BK-nB1">
-                                        <rect key="frame" x="0.0" y="360" width="295" height="31"/>
+                                        <rect key="frame" x="0.0" y="384" width="295" height="30"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-x3-fes">
-                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Üyelik ve KVKK Onayı." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsb-nl-Yfn">
                                                 <rect key="frame" x="59" y="2" width="236" height="26"/>
                                                 <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="Bbo-Ce-1TJ"/>
+                                                    <constraint firstAttribute="width" constant="236" id="ahm-7i-aEW"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -313,14 +307,12 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
+                                            <constraint firstItem="Vsb-nl-Yfn" firstAttribute="top" secondItem="az4-BK-nB1" secondAttribute="top" constant="2" id="2En-jG-2yG"/>
                                             <constraint firstItem="Aaf-x3-fes" firstAttribute="top" secondItem="az4-BK-nB1" secondAttribute="top" id="ABc-JH-fGR"/>
-                                            <constraint firstItem="Vsb-nl-Yfn" firstAttribute="top" secondItem="az4-BK-nB1" secondAttribute="top" id="ANg-Ad-1mw"/>
-                                            <constraint firstItem="Vsb-nl-Yfn" firstAttribute="height" secondItem="az4-BK-nB1" secondAttribute="height" constant="-5" id="NMR-Qj-ial"/>
                                             <constraint firstItem="Aaf-x3-fes" firstAttribute="leading" secondItem="az4-BK-nB1" secondAttribute="leading" id="Q8N-qQ-uZf"/>
                                             <constraint firstAttribute="bottom" secondItem="Aaf-x3-fes" secondAttribute="bottom" id="UgC-G7-Xef"/>
                                             <constraint firstAttribute="trailing" secondItem="Vsb-nl-Yfn" secondAttribute="trailing" id="dWu-hJ-A1V"/>
-                                            <constraint firstItem="Vsb-nl-Yfn" firstAttribute="top" secondItem="az4-BK-nB1" secondAttribute="top" constant="2" id="p8g-cg-EWE"/>
-                                            <constraint firstAttribute="bottom" secondItem="Vsb-nl-Yfn" secondAttribute="bottom" id="qyP-7H-gIG"/>
+                                            <constraint firstItem="Vsb-nl-Yfn" firstAttribute="centerY" secondItem="Aaf-x3-fes" secondAttribute="centerY" id="qTh-kP-Hi6"/>
                                             <constraint firstItem="Vsb-nl-Yfn" firstAttribute="leading" secondItem="Aaf-x3-fes" secondAttribute="trailing" constant="10" id="rJu-3p-VDs"/>
                                         </constraints>
                                         <connections>
@@ -328,7 +320,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5V-bG-YjA">
-                                        <rect key="frame" x="0.0" y="411" width="295" height="40"/>
+                                        <rect key="frame" x="0.0" y="434" width="295" height="40"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-XB-8oF">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="40"/>
@@ -346,19 +338,17 @@
                                             <constraint firstItem="wTY-XB-8oF" firstAttribute="top" secondItem="k5V-bG-YjA" secondAttribute="top" id="8uP-OZ-sfj"/>
                                             <constraint firstAttribute="trailing" secondItem="nlE-Iw-17K" secondAttribute="trailing" id="Bj9-Ot-E7j"/>
                                             <constraint firstItem="wTY-XB-8oF" firstAttribute="leading" secondItem="k5V-bG-YjA" secondAttribute="leading" id="FVh-SR-cOw"/>
-                                            <constraint firstItem="nlE-Iw-17K" firstAttribute="top" secondItem="k5V-bG-YjA" secondAttribute="top" id="HUc-lU-9to"/>
+                                            <constraint firstItem="nlE-Iw-17K" firstAttribute="bottom" secondItem="k5V-bG-YjA" secondAttribute="bottomMargin" id="GVr-lO-WPB"/>
                                             <constraint firstItem="nlE-Iw-17K" firstAttribute="leading" secondItem="wTY-XB-8oF" secondAttribute="trailing" constant="10" id="J3u-J3-Gr4"/>
-                                            <constraint firstAttribute="bottom" secondItem="nlE-Iw-17K" secondAttribute="bottom" id="Vaf-D7-M5e"/>
-                                            <constraint firstItem="nlE-Iw-17K" firstAttribute="height" secondItem="k5V-bG-YjA" secondAttribute="height" constant="-10" id="cCz-m5-1GZ"/>
-                                            <constraint firstItem="nlE-Iw-17K" firstAttribute="top" secondItem="k5V-bG-YjA" secondAttribute="top" constant="2" id="ivD-eX-inD"/>
+                                            <constraint firstItem="nlE-Iw-17K" firstAttribute="top" secondItem="k5V-bG-YjA" secondAttribute="top" constant="2" id="dxB-p7-6Jk"/>
                                             <constraint firstAttribute="bottom" secondItem="wTY-XB-8oF" secondAttribute="bottom" id="qXL-pn-2W6"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="UhM-NI-W5S" appends="YES" id="ai4-4m-pqt"/>
                                         </connections>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y7-P6-cJy">
-                                        <rect key="frame" x="0.0" y="471" width="295" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y7-P6-cJy">
+                                        <rect key="frame" x="0.0" y="494" width="295" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="tPD-Eg-rE4"/>
                                         </constraints>
@@ -368,7 +358,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfH-mo-b7Z">
-                                        <rect key="frame" x="0.0" y="531" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="554" width="295" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zaten üyeliğim var." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vk-jy-sPW">
                                                 <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
@@ -380,8 +370,8 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zu-O6-xSI">
-                                                <rect key="frame" x="123" y="0.0" width="58" height="50"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zu-O6-xSI">
+                                                <rect key="frame" x="238" y="0.0" width="57" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="Giriş Yap">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -409,14 +399,15 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="GVE-cj-2wC"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0YG-tx-66B" firstAttribute="leading" secondItem="GVE-cj-2wC" secondAttribute="leading" constant="40" id="0A2-sx-EI7"/>
                             <constraint firstItem="0YG-tx-66B" firstAttribute="top" secondItem="GVE-cj-2wC" secondAttribute="top" constant="40" id="GnS-2a-XZy"/>
                             <constraint firstItem="GVE-cj-2wC" firstAttribute="trailing" secondItem="0YG-tx-66B" secondAttribute="trailing" constant="40" id="c6P-lQ-gTF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="GVE-cj-2wC"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KHa-c5-v99"/>
                     <connections>
                         <outlet property="againPasswordTextField" destination="RSp-Kh-kTY" id="LaJ-Ef-2GJ"/>
                         <outlet property="approval6563LawLabel" destination="nlE-Iw-17K" id="sA2-8J-ueY"/>
@@ -446,22 +437,22 @@
             </objects>
             <point key="canvasLocation" x="-15" y="-939"/>
         </scene>
-        <!--View Controller-->
+        <!--Law No6563 View Controller-->
         <scene sceneID="PSD-fK-eHN">
             <objects>
-                <viewController id="J13-UG-E8C" sceneMemberID="viewController">
+                <viewController id="J13-UG-E8C" customClass="LawNo6563ViewController" customModule="VaktiHazar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tyo-CD-Xz0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTm-7Y-shk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTm-7Y-shk">
+                                <rect key="frame" x="0.0" y="0.0" width="395" height="1200"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GA-7X-7DW">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7GA-7X-7DW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eKx-b1-1Ix">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eKx-b1-1Ix">
+                                                <rect key="frame" x="0.0" y="62" width="375" height="1138"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1000" id="bsC-zP-C0h"/>
@@ -633,7 +624,27 @@ MADDE 16 – (1) Bu Kanun hükümlerini Bakanlar Kurulu yürütür.</string>
                                     <constraint firstItem="7GA-7X-7DW" firstAttribute="leading" secondItem="yTm-7Y-shk" secondAttribute="leading" id="rnQ-rO-I7u"/>
                                 </constraints>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNP-5f-ygg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="6563 Sayılı Kanun" id="XSD-En-svN">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="Back" id="VNu-lH-mLz">
+                                            <color key="tintColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="tPv-jo-E5A" kind="show" id="fhH-4n-u1e"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qh4-Sn-7tZ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yTm-7Y-shk" firstAttribute="leading" secondItem="Qh4-Sn-7tZ" secondAttribute="leading" id="7pp-x1-crT"/>
@@ -643,49 +654,48 @@ MADDE 16 – (1) Bu Kanun hükümlerini Bakanlar Kurulu yürütür.</string>
                             <constraint firstItem="eKx-b1-1Ix" firstAttribute="width" secondItem="tyo-CD-Xz0" secondAttribute="width" id="mDS-zq-iZx"/>
                             <constraint firstItem="7GA-7X-7DW" firstAttribute="width" secondItem="tyo-CD-Xz0" secondAttribute="width" id="plQ-2K-HWJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Qh4-Sn-7tZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="2gv-aG-kYg"/>
                     <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6C-zO-hxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="-1432"/>
+            <point key="canvasLocation" x="765.60000000000002" y="-1432.0839580209897"/>
         </scene>
         <!--ApprovalKVKK View Controller-->
         <scene sceneID="b28-wH-QPX">
             <objects>
                 <viewController id="A96-eG-i4s" customClass="ApprovalKVKKViewController" customModule="VaktiHazar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mkb-Qh-szQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWn-Of-oh4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWn-Of-oh4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eW4-7Z-b23">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eW4-7Z-b23">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZJQ-N6-XWk">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZJQ-N6-XWk">
+                                                <rect key="frame" x="0.0" y="70" width="375" height="1130"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1000" id="8cO-hT-oBt"/>
                                                 </constraints>
                                                 <string key="text">Üyelik Sözleşmesi
-Bu sayfa, Mapa Mobilya ve Aksesuar Paz. A.Ş. web sitesi (www.IKEA.com.tr) kullanım ve üyelik sözleşmesini içermektedir. Web sitesini kullanmanız ve/veya IKEA.com.tr'ye üye olmanız, burada yer alan maddeleri kabul ettiğiniz anlamına gelmektedir.
+Bu sayfa, Kart-Al kullanım ve üyelik sözleşmesini içermektedir. KART-AL' a üye olmanız halinde, burada yer alan maddeleri kabul ettiğiniz anlamına gelmektedir.
 
 Kişisel Bilgileriniz
 
-Üye olmanız için gerekli kişisel bilgileri IKEA ile paylaştığınızda, bu bilgiler IKEA tarafından saklanmaktadır. Kullanıcı, dilediği zaman kişisel bilgilerine erişme ve değiştirme hakkına sahiptir. Alışverişinizin size sorunsuz bir şekilde ulaştırılabilmesi için kişisel bilgilerinizin tam ve doğru bir şekilde doldurulmuş olması önemlidir. Üyelik esnasında e-posta ve/veya SMS yoluyla IKEA'daki yeniliklerden haberdar olmayı tercih etmeniz durumunda, belirtilmiş olan haberleşme kanal(lar)ı aracılığıyla IKEA tarafından dönemsel olarak bilgilendirme iletileri gönderilecektir. Kişisel verilerinizin işlenmesi ile ilgili detaylı bilgi, Kişisel Verilerin Korunması ve İşlenmesi Aydınlatma Metni ve Mapa Mobilya ve Aksesuar Pazarlama Anonim Şirketi Kişisel Verilerin Korunması ve İşlenmesi Politikası’nda yer almaktadır.
+Üye olmanız için gerekli kişisel bilgileri  KART-AL ile paylaştığınızda, bu bilgiler KART-AL tarafından saklanmaktadır. Kullanıcı, dilediği zaman kişisel bilgilerine erişme ve değiştirme hakkına sahiptir. Alışverişinizin size sorunsuz bir şekilde ulaştırılabilmesi için kişisel bilgilerinizin tam ve doğru bir şekilde doldurulmuş olması önemlidir. Üyelik esnasında e-posta ve SMS yoluyla KART-AL' daki yeniliklerden haberdar olmayı tercih etmeniz durumunda, belirtilmiş olan haberleşme kanal(lar)ı aracılığıyla KART-AL tarafından dönemsel olarak bilgilendirme iletileri gönderilecektir. Kişisel verilerinizin işlenmesi ile ilgili detaylı bilgi, Kişisel Verilerin Korunması ve İşlenmesi Aydınlatma Metni ve KART-AL Kişisel Verilerin Korunması ve İşlenmesi Politikası’nda yer almaktadır.
 
 Güvenlik
 
-IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güvenli bir şekilde tamamlamaları için azami önlemi almaya gayret eder.
+KART-AL, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güvenli bir şekilde tamamlamaları için azami önlemi almaya gayret eder.
 
--www.IKEA.com.tr'de yer alan ödeme işlemleri sayfalarının tümü RapidSSL 128 Bit sertifikası ile şifrelenmiş olan Akbank 3D Secure ödeme sayfasına yönlendirilmektedir. Kullandığınız tarayıcı (browser) bu sayfalarda yaptığınız işlemleri kilitli anahtar şeklinde size gösterek doğruluğunu onaylamaktadır. Bu anahtar sayesinde tarayıcınız vasıtasıyla gönderdiğiniz hiç bir bilgi üçüncü şahıslar tarafından görüntülenemez.
+KART-AL' da yer alan ödeme işlemleri sayfalarının tümü RapidSSL 128 Bit sertifikası ile şifrelenmiş olan Akbank 3D Secure ödeme sayfasına yönlendirilmektedir. Kullandığınız tarayıcı (browser) bu sayfalarda yaptığınız işlemleri kilitli anahtar şeklinde size gösterek doğruluğunu onaylamaktadır. Bu anahtar sayesinde tarayıcınız vasıtasıyla gönderdiğiniz hiç bir bilgi üçüncü şahıslar tarafından görüntülenemez.
 
--www.IKEA.com.tr'ye üye olanların, belirledikleri kullanıcı adı ve şifresini üçüncü kişi ya da kuruluşlarla paylaşılması durumunda üye sorumludur. Bununla birlikte, bir başkasının kullanıcı adı ve şifresiyle giriş yapılamayacağı gibi, kullanıcıların özel bilgilerine izinsiz olarak ulaşılamaz veya bunlar kullanılamaz. MAPA Mobilya ve Aksesuar Paz. A.Ş., bu sözleşmede yer alan maddeleri değiştirme hakkını saklı tutar. Üyelik sözleşmesini sonraki ziyaretlerinizde tekrar incelemeniz, gerçekleşebilecek değişiklikler hakkında haberdar olmanız açısından önemlidir.</string>
+KART-AL' a üye olanların, belirledikleri kullanıcı adı ve şifresini üçüncü kişi ya da kuruluşlarla paylaşılması durumunda üye sorumludur. Bununla birlikte, bir başkasının kullanıcı adı ve şifresiyle giriş yapılamayacağı gibi, kullanıcıların özel bilgilerine izinsiz olarak ulaşılamaz veya bunlar kullanılamaz. KART-AL, bu sözleşmede yer alan maddeleri değiştirme hakkını saklı tutar. Üyelik sözleşmesini sonraki ziyaretlerinizde tekrar incelemeniz, gerçekleşebilecek değişiklikler hakkında haberdar olmanız açısından önemlidir.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -707,7 +717,27 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <constraint firstItem="eW4-7Z-b23" firstAttribute="top" secondItem="oWn-Of-oh4" secondAttribute="top" id="qjj-kc-d96"/>
                                 </constraints>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Dk-p9-PeX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="6563 Sayılı Kanun" id="7C9-u6-GZH">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="Back" id="56o-Hh-tvf">
+                                            <color key="tintColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="tPv-jo-E5A" kind="show" id="H3s-NY-bMQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="w4l-28-4Hs"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZJQ-N6-XWk" firstAttribute="width" secondItem="Mkb-Qh-szQ" secondAttribute="width" id="6Qb-63-bLG"/>
@@ -717,14 +747,13 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="eW4-7Z-b23" firstAttribute="width" secondItem="Mkb-Qh-szQ" secondAttribute="width" id="UVg-WI-sdH"/>
                             <constraint firstItem="oWn-Of-oh4" firstAttribute="top" secondItem="Mkb-Qh-szQ" secondAttribute="top" id="a8B-Z0-9LY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="w4l-28-4Hs"/>
                     </view>
                     <navigationItem key="navigationItem" id="HMj-Nh-ZWR"/>
                     <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mP-QL-A9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="-1432"/>
+            <point key="canvasLocation" x="1432.8" y="-1432.0839580209897"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ijd-gl-Z7X">
@@ -767,18 +796,18 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                         <rect key="frame" x="0.0" y="28" width="284" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K8a-hv-rGG" id="rGk-aR-0O3">
-                                            <rect key="frame" x="0.0" y="0.0" width="284" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="284" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bYl-3X-TbI">
-                                                    <rect key="frame" x="8" y="11" width="30" height="30"/>
+                                                    <rect key="frame" x="8" y="11" width="30" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="gYq-GH-zt7"/>
                                                         <constraint firstAttribute="width" constant="30" id="zUX-6M-cIJ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78D-sS-yDh">
-                                                    <rect key="frame" x="46" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="46" y="11" width="42" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -802,13 +831,13 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="vch-Ek-izn"/>
                         <constraints>
                             <constraint firstItem="bTo-RT-FRb" firstAttribute="top" secondItem="VkK-NI-2Eh" secondAttribute="bottom" id="XmL-up-SMd"/>
                             <constraint firstAttribute="trailing" secondItem="VkK-NI-2Eh" secondAttribute="trailing" constant="91" id="cNd-Q7-cNb"/>
                             <constraint firstItem="VkK-NI-2Eh" firstAttribute="leading" secondItem="p8p-ni-2IO" secondAttribute="leading" id="iwj-GY-xuy"/>
                             <constraint firstItem="VkK-NI-2Eh" firstAttribute="top" secondItem="p8p-ni-2IO" secondAttribute="top" constant="20" id="ix8-nt-8YV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vch-Ek-izn"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="VkK-NI-2Eh" id="Kr0-qc-wQr"/>
@@ -827,11 +856,11 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <viewControllerLayoutGuide type="bottom" id="M5Z-tG-yf9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VuH-c5-YbM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HESABIM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Li-tb-y88">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HESABIM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Li-tb-y88">
+                                <rect key="frame" x="77" y="0.0" width="221" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="221" id="avs-Wv-QTv"/>
                                     <constraint firstAttribute="height" constant="21" id="x9h-mq-1jM"/>
@@ -851,8 +880,8 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <action selector="sideMenuTapped:" destination="jRO-Lv-Cb3" eventType="touchUpInside" id="Hc5-Zi-Vs8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRY-7m-j32">
-                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRY-7m-j32">
+                                <rect key="frame" x="0.0" y="592" width="375" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="g7X-pa-Gdn"/>
                                 </constraints>
@@ -864,8 +893,8 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <action selector="exitButtonTapped:" destination="jRO-Lv-Cb3" eventType="touchUpInside" id="aUr-pH-B7h"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="10m-hL-o7n">
-                                <rect key="frame" x="0.0" y="63" width="375" height="552"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="10m-hL-o7n">
+                                <rect key="frame" x="0.0" y="52" width="375" height="544"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="552" id="Kym-fh-iSK"/>
@@ -876,7 +905,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kn2-cS-3rT" id="OVM-aa-Z1w">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDt-sF-4v8">
@@ -896,6 +925,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="7W8-Zc-2wD"/>
                         <color key="backgroundColor" red="0.23137254901960785" green="0.43137254901960786" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P1e-Sx-zjU" firstAttribute="top" secondItem="VuH-c5-YbM" secondAttribute="top" constant="7" id="5Y0-dE-8xF"/>
@@ -908,7 +938,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="10m-hL-o7n" firstAttribute="leading" secondItem="VRY-7m-j32" secondAttribute="leading" id="qKV-Rx-N5X"/>
                             <constraint firstItem="4Li-tb-y88" firstAttribute="top" secondItem="U0c-LW-qJa" secondAttribute="bottom" id="yBd-7m-mft"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7W8-Zc-2wD"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="10m-hL-o7n" id="qui-eB-ELL"/>
@@ -916,7 +945,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaI-Lj-KfL" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2097" y="-1583"/>
+            <point key="canvasLocation" x="2096.8000000000002" y="-1582.7586206896553"/>
         </scene>
         <!--Watch Video View Controller-->
         <scene sceneID="4tX-QP-IKo">
@@ -927,19 +956,9 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <viewControllerLayoutGuide type="bottom" id="t6K-D9-gjC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bhy-Ht-LIz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VİDEO İZLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-N9-mst">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="221" id="4aS-iW-zRS"/>
-                                    <constraint firstAttribute="height" constant="21" id="QQD-cx-TkH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWF-9d-S88">
                                 <rect key="frame" x="1" y="9" width="46" height="44"/>
                                 <constraints>
@@ -951,19 +970,19 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <action selector="sideMenuTapped:" destination="f6i-u3-oLC" eventType="touchUpInside" id="bFZ-SI-OnI"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SA9-lg-QWe">
-                                <rect key="frame" x="0.0" y="49" width="375" height="618"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SA9-lg-QWe">
+                                <rect key="frame" x="0.0" y="63" width="375" height="586"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WatchVideoTableViewCell" rowHeight="170" id="6Kh-Bh-s02" customClass="WatchVideoTableViewCell" customModule="VaktiHazar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Kh-Bh-s02" id="7HS-se-dfl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9XT-JB-ZwC">
-                                                    <rect key="frame" x="35" y="50" width="325" height="109"/>
+                                                    <rect key="frame" x="36" y="50" width="323" height="109"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6ce-vh-w3b">
                                                         <size key="itemSize" width="102" height="92"/>
@@ -994,7 +1013,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                                     </cells>
                                                 </collectionView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Kategori Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGb-OX-GDM">
-                                                    <rect key="frame" x="35" y="21" width="325" height="21"/>
+                                                    <rect key="frame" x="36" y="21" width="323" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1020,7 +1039,18 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <outlet property="delegate" destination="f6i-u3-oLC" id="GCN-j6-AUg"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VİDEO İZLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-N9-mst">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="4aS-iW-zRS"/>
+                                    <constraint firstAttribute="height" constant="21" id="QQD-cx-TkH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="2VR-vN-bEd"/>
                         <color key="backgroundColor" red="0.23137254901960785" green="0.43137254901960786" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DWF-9d-S88" firstAttribute="leading" secondItem="bhy-Ht-LIz" secondAttribute="leading" constant="1" id="43k-zb-71h"/>
@@ -1032,12 +1062,11 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="SA9-lg-QWe" firstAttribute="leading" secondItem="2VR-vN-bEd" secondAttribute="leading" id="sAt-z4-qip"/>
                             <constraint firstItem="j4B-N9-mst" firstAttribute="centerX" secondItem="bhy-Ht-LIz" secondAttribute="centerX" id="sQ2-cI-lX0"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="2VR-vN-bEd"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAk-Su-U5Y" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2096.8000000000002" y="-911.69415292353835"/>
+            <point key="canvasLocation" x="2096.8000000000002" y="-869.41529235382313"/>
         </scene>
         <!--Personel Information View Controller-->
         <scene sceneID="QZO-3V-qjU">
@@ -1051,16 +1080,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kişisel Bilgilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itU-xg-OGf">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="221" id="UvQ-7t-a0B"/>
-                                    <constraint firstAttribute="height" constant="21" id="Vde-ZG-B0l"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-J9-h1Y">
                                 <rect key="frame" x="0.0" y="7" width="55" height="48"/>
                                 <constraints>
@@ -1072,32 +1091,29 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <segue destination="jRO-Lv-Cb3" kind="show" id="dC1-7e-Kso"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggy-gz-wgw">
-                                <rect key="frame" x="0.0" y="61" width="375" height="618"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggy-gz-wgw">
+                                <rect key="frame" x="0.0" y="63" width="375" height="618"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lyz-hb-a0M">
-                                        <rect key="frame" x="40" y="40" width="295" height="301"/>
+                                        <rect key="frame" x="40" y="40" width="295" height="313"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oIN-1A-NFT">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W8b-2Q-Sec">
-                                                <rect key="frame" x="0.0" y="50" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="54" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cep Telefonu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfP-Ce-ICj">
-                                                <rect key="frame" x="0.0" y="100" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="108" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-Ao-zkz">
-                                                <rect key="frame" x="0.0" y="150" width="295" height="31"/>
+                                                <rect key="frame" x="0.0" y="162" width="295" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CkV-Rn-eey">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -1120,8 +1136,8 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                                     <constraint firstItem="CkV-Rn-eey" firstAttribute="leading" secondItem="WGd-Ao-zkz" secondAttribute="leading" id="vkw-Kr-dxU"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LY-Ew-dRR">
-                                                <rect key="frame" x="0.0" y="201" width="295" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LY-Ew-dRR">
+                                                <rect key="frame" x="0.0" y="213" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="g7E-le-awk"/>
                                                 </constraints>
@@ -1131,14 +1147,14 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                                     <action selector="saveChanges:" destination="ck2-XW-4fy" eventType="touchUpInside" id="ZqY-il-3SE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUy-hX-sPD">
-                                                <rect key="frame" x="0.0" y="261" width="295" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUy-hX-sPD">
+                                                <rect key="frame" x="0.0" y="273" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="t8X-td-r3f"/>
                                                 </constraints>
                                                 <state key="normal" title="Üyeliğimi Pasif Et"/>
                                                 <connections>
-                                                    <action selector="goOnTapped:" destination="tPv-jo-E5A" eventType="touchUpInside" id="B9T-X2-iVF"/>
+                                                    <action selector="passiveMembershipTapped:" destination="ck2-XW-4fy" eventType="touchUpInside" id="wtO-OS-dAI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1153,7 +1169,18 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <constraint firstItem="lyz-hb-a0M" firstAttribute="top" secondItem="Ggy-gz-wgw" secondAttribute="top" constant="40" id="fzi-11-LDZ"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kişisel Bilgilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itU-xg-OGf">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="UvQ-7t-a0B"/>
+                                    <constraint firstAttribute="height" constant="21" id="Vde-ZG-B0l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="XKR-3z-2Wi"/>
                         <color key="backgroundColor" red="0.23137254901960785" green="0.43137254901960786" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ggy-gz-wgw" firstAttribute="leading" secondItem="PU4-J9-h1Y" secondAttribute="leading" id="6V7-84-2Ii"/>
@@ -1163,7 +1190,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="Ggy-gz-wgw" firstAttribute="top" secondItem="itU-xg-OGf" secondAttribute="bottom" constant="20" id="VfZ-zW-9OI"/>
                             <constraint firstItem="PU4-J9-h1Y" firstAttribute="leading" secondItem="bpO-8k-acW" secondAttribute="leading" id="cC5-Sh-eed"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XKR-3z-2Wi"/>
                     </view>
                     <navigationItem key="navigationItem" id="PTg-Be-Aw4"/>
                     <connections>
@@ -1177,7 +1203,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u09-iB-KDQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2736.8000000000002" y="-1582.7586206896553"/>
+            <point key="canvasLocation" x="2726" y="-1582"/>
         </scene>
         <!--Change Email View Controller-->
         <scene sceneID="Sw2-la-2Ff">
@@ -1191,16 +1217,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Posta Adresimi Değiştir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDI-V7-2bP">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="cq1-ul-KUi"/>
-                                    <constraint firstAttribute="width" constant="221" id="s4y-7Q-gND"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-Ya-uIF">
                                 <rect key="frame" x="0.0" y="7" width="55" height="48"/>
                                 <constraints>
@@ -1216,7 +1232,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                 <rect key="frame" x="0.0" y="63" width="375" height="618"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KDb-zT-IH8">
-                                        <rect key="frame" x="40" y="40" width="295" height="223.5"/>
+                                        <rect key="frame" x="40" y="40" width="295" height="235.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mevcut E-posta" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGJ-SY-5sA">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="13.5"/>
@@ -1225,31 +1241,28 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mevcut E-Posta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oB8-B0-sJ4">
-                                                <rect key="frame" x="0.0" y="33.5" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="33.5" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yeni E-Posta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvN-EP-QFw">
-                                                <rect key="frame" x="0.0" y="83.5" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="87.5" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yeni E-Posta Tekrar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FfE-mD-Cc7">
-                                                <rect key="frame" x="0.0" y="133.5" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="141.5" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDv-eP-ELw">
-                                                <rect key="frame" x="0.0" y="183.5" width="295" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDv-eP-ELw">
+                                                <rect key="frame" x="0.0" y="195.5" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="wcS-4c-2Zu"/>
                                                 </constraints>
-                                                <state key="normal" title="Pin Kodu Gönder"/>
+                                                <state key="normal" title="Değişiklikleri Kaydet"/>
                                                 <connections>
-                                                    <action selector="sendPinCodeTapped:" destination="kv2-ac-JVL" eventType="touchUpInside" id="fNQ-13-Te9"/>
+                                                    <action selector="changeEmailTapped:" destination="kv2-ac-JVL" eventType="touchUpInside" id="jtM-st-JX2"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1267,7 +1280,18 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <constraint firstItem="KDb-zT-IH8" firstAttribute="leading" secondItem="Tpf-7A-YYR" secondAttribute="leading" constant="40" id="uEX-NZ-anR"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="E-Posta Adresimi Değiştir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDI-V7-2bP">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cq1-ul-KUi"/>
+                                    <constraint firstAttribute="width" constant="221" id="s4y-7Q-gND"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="x1g-AU-kFy"/>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rDI-V7-2bP" firstAttribute="centerX" secondItem="eqw-qP-wTf" secondAttribute="centerX" id="0an-MC-YQg"/>
@@ -1277,7 +1301,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="rDI-V7-2bP" firstAttribute="top" secondItem="qyP-iH-6CH" secondAttribute="bottom" id="XSY-pZ-8dT"/>
                             <constraint firstItem="Tpf-7A-YYR" firstAttribute="top" secondItem="rDI-V7-2bP" secondAttribute="bottom" constant="20" id="x1T-lU-NiY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="x1g-AU-kFy"/>
                     </view>
                     <navigationItem key="navigationItem" id="JrN-Tz-4tT"/>
                     <connections>
@@ -1303,16 +1326,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifremi Değiştir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tp-oF-JPO">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="1TM-bs-2pv"/>
-                                    <constraint firstAttribute="width" constant="221" id="xBS-aF-xLa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhH-zc-e1Y">
                                 <rect key="frame" x="0.0" y="7" width="55" height="48"/>
                                 <constraints>
@@ -1328,28 +1341,25 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                 <rect key="frame" x="0.0" y="63" width="375" height="618"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="05r-qA-kV7">
-                                        <rect key="frame" x="40" y="40" width="295" height="190"/>
+                                        <rect key="frame" x="40" y="40" width="295" height="202"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mevcut Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="74m-5Y-xXQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yeni Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-47-2zx">
-                                                <rect key="frame" x="0.0" y="50" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="54" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yeni Şifre (Tekrar)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sJZ-4X-VIj">
-                                                <rect key="frame" x="0.0" y="100" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="108" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHu-58-uy2">
-                                                <rect key="frame" x="0.0" y="150" width="295" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHu-58-uy2">
+                                                <rect key="frame" x="0.0" y="162" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="3q7-Mw-h0o"/>
                                                 </constraints>
@@ -1370,7 +1380,18 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <constraint firstItem="05r-qA-kV7" firstAttribute="top" secondItem="4u7-Vf-bmd" secondAttribute="top" constant="40" id="UTA-fW-RPq"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Şifremi Değiştir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tp-oF-JPO">
+                                <rect key="frame" x="77" y="21" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1TM-bs-2pv"/>
+                                    <constraint firstAttribute="width" constant="221" id="xBS-aF-xLa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="EVR-pA-DIa"/>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4u7-Vf-bmd" firstAttribute="leading" secondItem="yhH-zc-e1Y" secondAttribute="leading" id="K9c-cI-2Gj"/>
@@ -1380,7 +1401,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="yhH-zc-e1Y" firstAttribute="leading" secondItem="YXm-qS-kT3" secondAttribute="leading" id="lxd-ux-3DU"/>
                             <constraint firstItem="4u7-Vf-bmd" firstAttribute="top" secondItem="7tp-oF-JPO" secondAttribute="bottom" constant="20" id="ppe-Qq-i5j"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="EVR-pA-DIa"/>
                     </view>
                     <navigationItem key="navigationItem" id="Di6-Ig-1gx"/>
                     <connections>
@@ -1406,16 +1426,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresimi Değiştir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEh-Ui-eaO">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="221" id="daz-91-e1h"/>
-                                    <constraint firstAttribute="height" constant="21" id="eL3-fA-v01"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-Ld-iKC">
                                 <rect key="frame" x="0.0" y="7" width="55" height="48"/>
                                 <constraints>
@@ -1427,50 +1437,44 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <segue destination="jRO-Lv-Cb3" kind="show" id="MUd-bf-sII"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1k7-VM-wwp">
-                                <rect key="frame" x="0.0" y="61" width="375" height="618"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1k7-VM-wwp">
+                                <rect key="frame" x="0.0" y="63" width="375" height="618"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vl8-EX-cyl">
-                                        <rect key="frame" x="40" y="40" width="295" height="340"/>
+                                        <rect key="frame" x="40" y="40" width="295" height="364"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adres Başlığı (Örnek: Ev ya da İş)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3W-7h-h1P" userLabel="Addres Title Text Field">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yB2-Ae-KDg" userLabel="First Name Text Field">
-                                                <rect key="frame" x="0.0" y="50" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="54" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7N-HU-Wxu">
-                                                <rect key="frame" x="0.0" y="100" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="108" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cep Telefonu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tN6-IX-mry">
-                                                <rect key="frame" x="0.0" y="150" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="162" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adres" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ye-eu-MgI" userLabel="Address Text Field">
-                                                <rect key="frame" x="0.0" y="200" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="216" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Posta Kodu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i8S-qq-adz" userLabel="Post Code Text Field">
-                                                <rect key="frame" x="0.0" y="250" width="295" height="30"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="270" width="295" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVp-NF-S70">
-                                                <rect key="frame" x="0.0" y="300" width="295" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVp-NF-S70">
+                                                <rect key="frame" x="0.0" y="324" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="TD0-w6-MaX"/>
                                                 </constraints>
@@ -1492,7 +1496,18 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <constraint firstItem="Vl8-EX-cyl" firstAttribute="leading" secondItem="1k7-VM-wwp" secondAttribute="leading" constant="40" id="z0V-dQ-p3l"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adresimi Değiştir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEh-Ui-eaO">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="daz-91-e1h"/>
+                                    <constraint firstAttribute="height" constant="21" id="eL3-fA-v01"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="dEI-Ln-rG7"/>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qEh-Ui-eaO" firstAttribute="centerX" secondItem="naO-ex-hJB" secondAttribute="centerX" id="YnB-qY-1Hg"/>
@@ -1502,7 +1517,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="bqc-Ld-iKC" firstAttribute="leading" secondItem="naO-ex-hJB" secondAttribute="leading" id="pWp-Pn-Ep9"/>
                             <constraint firstItem="bqc-Ld-iKC" firstAttribute="top" secondItem="naO-ex-hJB" secondAttribute="top" constant="7" id="thq-Jw-Zo7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dEI-Ln-rG7"/>
                     </view>
                     <navigationItem key="navigationItem" id="6xk-pw-VZc"/>
                     <connections>
@@ -1517,7 +1531,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZB-gm-e1m" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4647" y="-1584"/>
+            <point key="canvasLocation" x="4645.6000000000004" y="-1584.5577211394304"/>
         </scene>
         <!--Video Detail View Controller-->
         <scene sceneID="Tyw-LW-Tqj">
@@ -1531,16 +1545,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Keyfi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He2-Wm-NHV">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="J9O-kf-9Ya"/>
-                                    <constraint firstAttribute="width" constant="221" id="bNF-WD-C9e"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21y-l8-OlT">
                                 <rect key="frame" x="0.0" y="7" width="55" height="48"/>
                                 <constraints>
@@ -1552,15 +1556,26 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <segue destination="f6i-u3-oLC" kind="show" id="bBT-rQ-HTg"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSX-5z-9In">
-                                <rect key="frame" x="0.0" y="61" width="375" height="618"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GSX-5z-9In">
+                                <rect key="frame" x="0.0" y="63" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="618" id="kfN-S9-m1n"/>
                                     <constraint firstAttribute="width" constant="375" id="nyq-Df-Led"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Video Keyfi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He2-Wm-NHV">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="J9O-kf-9Ya"/>
+                                    <constraint firstAttribute="width" constant="221" id="bNF-WD-C9e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ouQ-Op-Qum"/>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="He2-Wm-NHV" firstAttribute="top" secondItem="mRF-oR-AcG" secondAttribute="bottom" id="dof-hs-sM8"/>
@@ -1570,13 +1585,12 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="GSX-5z-9In" firstAttribute="leading" secondItem="21y-l8-OlT" secondAttribute="leading" id="ky0-Eo-5nl"/>
                             <constraint firstItem="He2-Wm-NHV" firstAttribute="centerX" secondItem="8pB-Qc-3Cx" secondAttribute="centerX" id="xDG-Lf-Slv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ouQ-Op-Qum"/>
                     </view>
                     <navigationItem key="navigationItem" id="jO4-U9-Ybp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHV-dQ-Pkf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5279" y="-1583"/>
+            <point key="canvasLocation" x="2726" y="-869"/>
         </scene>
         <!--Products View Controller-->
         <scene sceneID="6I2-w9-kK8">
@@ -1587,19 +1601,9 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <viewControllerLayoutGuide type="bottom" id="GFk-BR-EjX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mg1-hf-vyK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ÜRÜNLER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbk-5F-E3Z">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="221" id="Soe-pg-AGJ"/>
-                                    <constraint firstAttribute="height" constant="21" id="T9G-cy-QxV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX7-2Y-XsD">
                                 <rect key="frame" x="0.0" y="7" width="55" height="48"/>
                                 <constraints>
@@ -1611,8 +1615,8 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <action selector="sideMenuTapped:" destination="oLP-Lr-hQU" eventType="touchUpInside" id="WHu-oL-Q3c"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P6R-OU-acA">
-                                <rect key="frame" x="0.0" y="49" width="375" height="618"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P6R-OU-acA">
+                                <rect key="frame" x="0.0" y="63" width="375" height="584"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KRz-S2-S2E">
                                     <size key="itemSize" width="373" height="280"/>
@@ -1629,7 +1633,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQi-kd-W7D">
-                                                    <rect key="frame" x="8" y="44" width="357" height="145"/>
+                                                    <rect key="frame" x="8" y="24" width="357" height="165"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kupon Miktarı: 120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-W7-ShJ">
                                                     <rect key="frame" x="16" y="209" width="341" height="21"/>
@@ -1637,7 +1641,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-AE-cq8">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-AE-cq8">
                                                     <rect key="frame" x="16" y="240" width="341" height="30"/>
                                                     <state key="normal" title="Satın Al"/>
                                                     <connections>
@@ -1670,7 +1674,18 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <outlet property="delegate" destination="oLP-Lr-hQU" id="L3v-nJ-Pnl"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ÜRÜNLER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbk-5F-E3Z">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="Soe-pg-AGJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="T9G-cy-QxV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="hxf-aN-pfb"/>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GFk-BR-EjX" firstAttribute="top" secondItem="P6R-OU-acA" secondAttribute="bottom" id="1BO-QP-jRN"/>
@@ -1682,7 +1697,6 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="P6R-OU-acA" firstAttribute="top" secondItem="Zbk-5F-E3Z" secondAttribute="bottom" constant="8" id="p2A-fU-Xo9"/>
                             <constraint firstItem="P6R-OU-acA" firstAttribute="trailing" secondItem="hxf-aN-pfb" secondAttribute="trailing" id="tWI-in-1FE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hxf-aN-pfb"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="P6R-OU-acA" id="NSG-Hz-Kxr"/>
@@ -1690,7 +1704,7 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAG-Zw-gf5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2096.8000000000002" y="-253.2233883058471"/>
+            <point key="canvasLocation" x="2096.8000000000002" y="-156.07196401799101"/>
         </scene>
         <!--Buy View Controller-->
         <scene sceneID="P0g-5y-UgO">
@@ -1701,21 +1715,11 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                         <viewControllerLayoutGuide type="bottom" id="gpg-i3-Tox"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uun-9Q-URi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SATIN AL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZf-HG-LvP">
-                                <rect key="frame" x="77" y="20" width="221" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Uoj-tk-zxY"/>
-                                    <constraint firstAttribute="width" constant="221" id="miV-5P-X1B"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pol-r2-Ejy">
-                                <rect key="frame" x="0.0" y="6.5" width="55" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pol-r2-Ejy">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="H6T-4Z-CHD"/>
                                     <constraint firstAttribute="height" constant="48" id="bgV-uC-9SG"/>
@@ -1725,7 +1729,18 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                                     <segue destination="oLP-Lr-hQU" kind="show" id="7yX-tl-03g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SATIN AL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZf-HG-LvP">
+                                <rect key="frame" x="77" y="14" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Uoj-tk-zxY"/>
+                                    <constraint firstAttribute="width" constant="221" id="miV-5P-X1B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="AV5-8k-6M1"/>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FZf-HG-LvP" firstAttribute="centerX" secondItem="uun-9Q-URi" secondAttribute="centerX" id="Rl6-4D-jIx"/>
@@ -1733,23 +1748,134 @@ IKEA, kullanıcıların kişisel bilgilerini saklamak ve alışverişlerini güv
                             <constraint firstItem="FZf-HG-LvP" firstAttribute="top" secondItem="8Z8-nX-8Yo" secondAttribute="bottom" id="x9z-oy-NP3"/>
                             <constraint firstItem="Pol-r2-Ejy" firstAttribute="leading" secondItem="uun-9Q-URi" secondAttribute="leading" id="zJY-BS-oEe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="AV5-8k-6M1"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6e-xR-elj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2838" y="-253"/>
+            <point key="canvasLocation" x="3264.8000000000002" y="-173.16341829085459"/>
+        </scene>
+        <!--My Orders View Controller-->
+        <scene sceneID="2Of-JR-KFb">
+            <objects>
+                <viewController storyboardIdentifier="MyOrdersVC" id="zGG-GN-0Ns" customClass="MyOrdersViewController" customModule="VaktiHazar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e7C-kD-o32"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kez-Hr-RHL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aoe-ZZ-Lnt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKY-r4-B4s">
+                                <rect key="frame" x="0.0" y="7" width="55" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="k0I-lW-SwT"/>
+                                    <constraint firstAttribute="height" constant="48" id="viK-pY-yOX"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SSR-XC-GeC">
+                                <rect key="frame" x="0.0" y="63" width="375" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a3p-UZ-vLq">
+                                        <rect key="frame" x="40" y="40" width="295" height="249.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Görüntülemek istediğiniz sipariş yılını seçin." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOP-77-fnS">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="13.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKn-MM-FeR">
+                                                <rect key="frame" x="0.0" y="33" width="295" height="216"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g8x-Dy-B0k">
+                                        <rect key="frame" x="0.0" y="324" width="375" height="552"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="GuP-X4-Xqm"/>
+                                            <constraint firstAttribute="height" constant="552" id="aGm-oo-Nzu"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kCell" id="oJd-Wt-xgP">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJd-Wt-xgP" id="7Jz-Tv-bpb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE2-6M-EaC">
+                                                            <rect key="frame" x="13" y="12" width="348" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="xE2-6M-EaC" secondAttribute="trailing" constant="14" id="Vgc-af-IPx"/>
+                                                        <constraint firstItem="xE2-6M-EaC" firstAttribute="leading" secondItem="7Jz-Tv-bpb" secondAttribute="leading" constant="13" id="con-3g-rJy"/>
+                                                        <constraint firstItem="xE2-6M-EaC" firstAttribute="centerY" secondItem="7Jz-Tv-bpb" secondAttribute="centerY" id="w32-EY-oY9"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="g8x-Dy-B0k" firstAttribute="centerX" secondItem="a3p-UZ-vLq" secondAttribute="centerX" id="1aY-rx-vma"/>
+                                    <constraint firstAttribute="height" constant="618" id="528-ye-X6a"/>
+                                    <constraint firstAttribute="width" constant="375" id="LEa-Dp-rGK"/>
+                                    <constraint firstItem="g8x-Dy-B0k" firstAttribute="top" secondItem="a3p-UZ-vLq" secondAttribute="bottom" constant="34.5" id="O4P-U1-LVo"/>
+                                    <constraint firstItem="a3p-UZ-vLq" firstAttribute="top" secondItem="SSR-XC-GeC" secondAttribute="top" constant="40" id="eks-dV-cJ5"/>
+                                    <constraint firstItem="a3p-UZ-vLq" firstAttribute="leading" secondItem="SSR-XC-GeC" secondAttribute="leading" constant="40" id="j72-Zz-qeG"/>
+                                    <constraint firstAttribute="trailing" secondItem="a3p-UZ-vLq" secondAttribute="trailing" constant="40" id="zFz-TM-c6R"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Siparişlerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0g-J3-OfC">
+                                <rect key="frame" x="77" y="20" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="9Tl-YE-gPa"/>
+                                    <constraint firstAttribute="height" constant="21" id="rrC-bU-a83"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rBr-KK-Ecj"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.43137254899999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SSR-XC-GeC" firstAttribute="top" secondItem="g0g-J3-OfC" secondAttribute="bottom" constant="20" id="AOW-BZ-VPa"/>
+                            <constraint firstItem="mKY-r4-B4s" firstAttribute="leading" secondItem="Aoe-ZZ-Lnt" secondAttribute="leading" id="Flt-Ru-PBb"/>
+                            <constraint firstItem="SSR-XC-GeC" firstAttribute="leading" secondItem="mKY-r4-B4s" secondAttribute="leading" id="OdX-nS-r9G"/>
+                            <constraint firstItem="g0g-J3-OfC" firstAttribute="centerX" secondItem="Aoe-ZZ-Lnt" secondAttribute="centerX" id="QKx-SH-AJv"/>
+                            <constraint firstItem="mKY-r4-B4s" firstAttribute="top" secondItem="Aoe-ZZ-Lnt" secondAttribute="top" constant="7" id="Xdl-I1-ZlR"/>
+                            <constraint firstItem="g0g-J3-OfC" firstAttribute="top" secondItem="e7C-kD-o32" secondAttribute="bottom" id="fO3-Bd-lfy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f69-RB-RFA"/>
+                    <connections>
+                        <outlet property="datePickerView" destination="qKn-MM-FeR" id="QFT-Uo-cag"/>
+                        <outlet property="label" destination="BOP-77-fnS" id="LHd-RS-ZgJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgA-UA-xnh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5276" y="-1585.4572713643179"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Back" width="20" height="21"/>
-        <image name="SideMenu" width="18" height="14"/>
-        <image name="greenPlayIcon" width="312" height="262"/>
-    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tyh-jD-Iuk"/>
-        <segue reference="dC1-7e-Kso"/>
-        <segue reference="FQW-VJ-iNH"/>
+        <segue reference="7yX-tl-03g"/>
+        <segue reference="7yg-BN-vDc"/>
+        <segue reference="H3s-NY-bMQ"/>
         <segue reference="uaM-yy-oMN"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Back" width="20" height="21"/>
+        <image name="SideMenu" width="18.5" height="14"/>
+        <image name="greenPlayIcon" width="312.33334350585938" height="262.33334350585938"/>
+    </resources>
 </document>

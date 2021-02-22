@@ -10,13 +10,13 @@ import UIKit
 
 class CreatedUserResponseMesssage : Codable {
     
-    let isSuccess : Bool
-    let errorMessage : String
+    let IsSuccess : Bool
+    let ErrorMessage : String
     
     init(isSuccess : Bool, errorMessage : String) {
         
-        self.isSuccess = isSuccess
-        self.errorMessage = errorMessage
+        self.IsSuccess = isSuccess
+        self.ErrorMessage = errorMessage
         
     }
     
@@ -25,21 +25,21 @@ class CreatedUserResponseMesssage : Codable {
 
 class CreatedUserRequestMessage : Codable {
     //let ile tanımladıklarım veritabanında yazan şekli ile alınır.
-    let name : String?
-    let lastName : String?
-    let email : String?
-    let birthDate : String?
-    let password : String?
-    let phoneNumber : String?
+    let Name : String?
+    let Lastname : String?
+    let Email : String?
+    let Birthdate : String?
+    let Password : String?
+    let PhoneNumber : String?
     
-    init(name : String?, lastName : String?, email : String?, birthDate : String?, password : String?, phoneNumber : String?) {
+    init(name : String?, lastName : String?, email : String?, birthdate : String?, password : String?, phoneNumber : String?) {
         
-        self.name = name
-        self.lastName = lastName
-        self.email = email
-        self.birthDate = birthDate
-        self.password = password
-        self.phoneNumber = phoneNumber
+        self.Name = name
+        self.Lastname = lastName 
+        self.Email = email
+        self.Birthdate = birthdate
+        self.Password = password
+        self.PhoneNumber = phoneNumber
         
     }
     

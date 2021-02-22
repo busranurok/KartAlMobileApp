@@ -25,9 +25,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var approvalKVKKLabel: UILabel!
     @IBOutlet weak var approval6563LawLabel: UILabel!
+    let datePicker = UIDatePicker()
+    
+    let button = UIButton(type: .custom)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        //birthDateTextfield
+       
+        datePicker.datePickerMode = UIDatePicker.Mode.date
+        datePicker.addTarget(self, action : #selector(datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
+        
+        birthDateTextfield.inputView = datePicker
         
         //Making switch buttons unselected at first
         kvkkApprovalSwitch.isOn = false
@@ -53,6 +63,21 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         setUpElements()
         
+    }
+    
+    //birthDateTextfield
+    @objc func datePickerValueChanged(sender: UIDatePicker){
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = DateFormatter.Style.medium
+        formatter.timeStyle = DateFormatter.Style.none
+        
+        birthDateTextfield.text = formatter.string(from: sender.date)
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     
@@ -117,6 +142,14 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             return "E-posta adresinizi doğru formatta girmediniz. (Örnek formatlar: vaktihazar@outlook.com , vaktihazar@gmail.com , vaktihazar@yahoo.com , vaktihazar@msn.com , vaktihazar@windowslive.com , vaktihazar@live.com )."
         }
         
+        let currentDateTime = Date()
+        
+        if datePicker.date > currentDateTime
+        {
+            return "Doğum yılınız şuanki yıldan daha büyük olamaz."
+        }
+        
+        
         //Check if the password is secure
         let cleanPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let cleanPassword2 = againPasswordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -154,7 +187,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         if errorMessage != nil {
             
             //There is something wrong with the fields, show error message
-            showError(message: errorMessage!)
+            showAlert(message: errorMessage!)
             
         } else {
             
@@ -181,7 +214,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             //textlerden bilgiler alınıyor: productNameText.text şeklinde
             //body e yazılacak kısım
             //We get the ones defined with let in the createduser model folder.
-            let requestBody = CreatedUserRequestMessage(name: name, lastName: lastName, email:email, birthDate: "2020-12-01T00:22:34.0748456+03:00", password: password , phoneNumber: phoneNumber)
+            let requestBody = CreatedUserRequestMessage(name: name, lastName: lastName, email:email, birthdate: birthDate, password: password , phoneNumber: phoneNumber)
             
             var jsonData = try! JSONEncoder().encode(requestBody)
             request.httpBody = jsonData
@@ -215,23 +248,28 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                         //json dan nesneye çevirmek decode (bana dönen cevap)
                         let response = try! JSONDecoder().decode(CreatedUserResponseMesssage.self, from: jsonData)
                         
-                        
-                        var resultStr : String = ""
-                        resultStr += "Is Success: \(response.isSuccess) ErrorMessage : \(response.errorMessage) \n"
-                        
-                        
-                        if(!response.isSuccess)
-                        {
-                            errorMessage = "Kullanıcı oluşturulurken hata oluştu : \(response.errorMessage)"
+                        if response.IsSuccess == false {
+                            
+                            self.showAlert(message: response.ErrorMessage)
+                            return
                         }
                         
-                        let alert = UIAlertController(title: "Information", message: resultStr, preferredStyle: .alert)
                         
-                        let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                        var resultStr : String = ""
+                        resultStr += "Is Success: \(response.IsSuccess) ErrorMessage : \(response.ErrorMessage) \n"
                         
-                        alert.addAction(ok)
                         
-                        self.present(alert, animated: true, completion: nil)
+                        if(!response.IsSuccess)
+                        {
+                            errorMessage = "Kullanıcı oluşturulurken hata oluştu : \(response.ErrorMessage)"
+                        }
+                        else{
+                            DispatchQueue.main.async {
+                                self.transitionToSignIn()
+                            }
+                        }
+                        
+                       
                         
                     } catch let jsonErr{
                         
@@ -247,13 +285,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             if errorMessage != nil{
                 
                 //There was an error creating the user
-                showError(message: errorMessage!)
+                showAlert(message: errorMessage!)
                 
             }
             else{
                 
                 //Transition to the home screen
-                transitionToHome()
+                
                 
             }
            
@@ -262,16 +300,16 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func transitionToHome(){
+    func transitionToSignIn(){
         
-        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.signInViewController) as? SignInViewController
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
         
     }
     
-    func showError(message : String){
+    func showAlert(message : String){
         
         let alert = UIAlertController(title: "Dikkat", message: message, preferredStyle: .alert)
         
