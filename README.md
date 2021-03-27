@@ -10,8 +10,6 @@
 
 # Ekran Görüntüleri
 
-
-<img src="https://github.com/busranurok/PasswordProtected/blob/master/images/pp1.jpeg" width="200" height="340" style="margin-top:10px" align="left" >
 <img src="https://github.com/busranurok/KartAlMobileApp/blob/master/VaktiHazar/screenshots/Hesab%C4%B1m.jpeg" width="200" height="340" style="margin-top:10px" align="left" >
 
 <img src="https://github.com/busranurok/KartAlMobileApp/blob/master/VaktiHazar/screenshots/Login.jpeg" width="200" height="340" style="margin-top:10px" align="left" >
